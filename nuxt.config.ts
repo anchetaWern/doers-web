@@ -10,8 +10,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
     prerender: {
-      autoSubfolderIndex: false,
-      routes: ['/blog/hello-world']
+      autoSubfolderIndex: false
     }
   },
 
