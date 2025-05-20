@@ -1,5 +1,5 @@
 <template>
-  <div>
-    Welcome to DOERs
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
