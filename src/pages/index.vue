@@ -4,13 +4,10 @@
       <v-container class="d-flex align-center py-0">
         <v-app-bar-title class="pl-0">
           <div class="d-flex align-center">
-            <v-avatar
-              class="me-3"
-              image="/images/doers.jpg"
-              rounded="0"
+            <v-img
+              src="/images/doers-full-logo.png"
+              max-width="100"
             />
-
-            Dalumpinas Oeste Eco Rangers
           </div>
         </v-app-bar-title>
 
@@ -66,19 +63,24 @@
         <section id="filter">
           <v-container>
             <v-row justify="space-between">
-              <v-col cols="auto">
+              <v-col cols="12" md="6">
                 <v-responsive width="350">
                   <h2 class="text-h4">
                     Daily coastal cleanups
                   </h2>
-                 
+                  <div class="mt-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  </div>
                 </v-responsive>
               </v-col>
 
-              <v-img
-                max-width="600"
-                src="/images/home/daily-coastal-cleanup.jpg"
-              />
+              <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
+                <v-img
+                  src="/images/home/daily-coastal-cleanup.jpg"
+                  class="w-100 w-md-auto"
+                  max-width="600"
+                />
+              </v-col>
             </v-row>
           </v-container>
         </section>
@@ -95,15 +97,18 @@
                   <h2 class="text-h4">
                     Plogging
                   </h2>
-
-                
+                  <div class="mt-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  </div>
                 </v-responsive>
               </v-col>
 
-              <v-img
-                max-width="600"
-                src="/images/home/plogging.jpg"
-              />
+              <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
+                <v-img
+                  max-width="600"
+                  src="/images/home/plogging.jpg"
+                />
+              </v-col>
             </v-row>
           </v-container>
         </section>
@@ -120,15 +125,20 @@
                   <h2 class="text-h4">
                     Health and wellness
                   </h2>
+                  <div class="mt-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  </div>
 
                  
                 </v-responsive>
               </v-col>
 
-              <v-img
-                max-width="600"
-                src="/images/home/health-and-wellness.jpg"
-              />
+              <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
+                <v-img
+                  max-width="600"
+                  src="/images/home/health-and-wellness.jpg"
+                />
+              </v-col>
             </v-row>
           </v-container>
         </section>
@@ -149,15 +159,20 @@
                   <h2 class="text-h4">
                     Medical missions
                   </h2>
+                  <div class="mt-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  </div>
 
                 
                 </v-responsive>
               </v-col>
 
-              <v-img
-                max-width="600"
-                src="/images/home/medical-mission.jpg"
-              />
+              <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
+                <v-img
+                  max-width="600"
+                  src="/images/home/medical-mission.jpg"
+                />
+              </v-col>
             </v-row>
           </v-container>
         </section>
