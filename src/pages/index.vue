@@ -50,7 +50,7 @@
               </div>
 
               <v-btn block href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
-              Join
+              Support Us
               </v-btn>
 
               </v-sheet>
@@ -142,6 +142,36 @@
             </v-row>
           </v-container>
         </section>
+
+        <v-container>
+          <v-divider class="my-12" />
+        </v-container>
+
+        <section id="filter">
+          <v-container>
+            <v-row justify="space-between">
+              <v-col cols="12" md="6">
+                <v-responsive width="350">
+                  <h2 class="text-h4">
+                    Medical Missions
+                  </h2>
+                  <div class="mt-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  </div>
+                </v-responsive>
+              </v-col>
+
+              <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
+                <v-img
+                  src="/images/home/medical-mission.jpg"
+                  class="w-100 w-md-auto"
+                  max-width="600"
+                />
+              </v-col>
+            </v-row>
+          </v-container>
+        </section>
+
       </v-sheet>
 
       <v-sheet
@@ -150,30 +180,59 @@
       >
         <section id="grid">
           <v-container>
-            <v-row justify="space-between">
+            <v-row justify="center">
               <v-col cols="auto">
-                <v-responsive
-                  class="overflow-visible"
-                  width="350"
-                >
-                  <h2 class="text-h4">
-                    Medical missions
-                  </h2>
-                  <div class="mt-5">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
-                  </div>
+                <h2 class="text-h3 text-center">
+                  The Numbers 
+                </h2>
+                <h3 class="text-h5 text-center">
+                 Since 2020
+                </h3>
+              </v-col>   
+            </v-row>
 
-                
-                </v-responsive>
+            <v-row justify="space-between mt-5">
+              <v-col cols="auto">
+                <h2 class="text-h3 text-center">
+                  5,000+
+                </h2>
+                <h3 class="text-h5">
+                  Clean-up volunteers
+                </h3>
               </v-col>
 
-              <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-                <v-img
-                  max-width="600"
-                  src="/images/home/medical-mission.jpg"
-                />
+              <v-col cols="auto">
+                <h2 class="text-h3 text-center">
+                    100+
+                  </h2>
+                  <h3 class="text-h5">
+                    Blood bags donated
+                  </h3>
+              </v-col>
+
+              <v-col cols="auto">
+                <h2 class="text-h3 text-center">
+                  2,000+ kg
+                </h2>
+                <h3 class="text-h5">
+                  Garbage collected
+                </h3>
               </v-col>
             </v-row>
+
+             <v-row justify="center mt-5">
+                <v-col cols="auto">
+                  <h2 class="text-h3 text-center">
+                  1,000+
+                </h2>
+                <h3 class="text-h5">
+                  Mangroves Planted & Parented
+                </h3>
+                  
+                </v-col>
+
+            </v-row>
+         
           </v-container>
         </section>
       </v-sheet>
