@@ -13,11 +13,42 @@
 
         <v-spacer />
 
-        <v-btn text to="/">Home</v-btn>
-        <v-btn text to="/about-us">About Us</v-btn>
-        <v-btn text to="/contact-us">Contact Us</v-btn>
-        <v-btn text to="/get-involved">Get Involved</v-btn>
-        <v-btn color="#26A9E0" class="ml-2" variant="elevated">Donate</v-btn>
+     
+        <div v-if="$vuetify.display.mdAndUp">
+          <v-btn text to="/">Home</v-btn>
+          <v-btn text to="/about-us">About Us</v-btn>
+          <v-btn text to="/contact-us">Contact Us</v-btn>
+          <v-btn text to="/get-involved">Get Involved</v-btn>
+          <v-btn color="primary" class="ml-2">Donate</v-btn>
+        </div>
+
+ 
+        <v-menu
+          v-if="$vuetify.display.smAndDown"
+          offset-y
+          :close-on-content-click="false"
+        >
+          <template #activator="{ props }">
+            <v-app-bar-nav-icon v-bind="props" />
+          </template>
+          <v-list>
+            <v-list-item to="/">
+              <v-list-item-title>Home</v-list-item-title>
+            </v-list-item>
+            <v-list-item to="/about-us">
+              <v-list-item-title>About Us</v-list-item-title>
+            </v-list-item>
+            <v-list-item to="/contact-us">
+              <v-list-item-title>Contact Us</v-list-item-title>
+            </v-list-item>
+            <v-list-item to="/get-involved">
+              <v-list-item-title>Get Involved</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-btn block color="primary" class="mt-2">Donate</v-btn>
+            </v-list-item>
+          </v-list>
+        </v-menu>
       </v-container>
     </v-app-bar>
 
@@ -33,10 +64,10 @@
             <v-responsive class="mx-auto" width="500">
               
               <v-sheet
-          class="pa-6 mx-auto"
-          color="rgba(0, 0, 0, 0.5)"
-          elevation="0"
-          rounded="lg"
+            class="pa-6 mx-auto"
+            color="rgba(0, 0, 0, 0.5)"
+            elevation="0"
+            rounded="lg"
         >
 
               <h3 class="text-h3 text-white">
@@ -172,85 +203,69 @@
 
       </v-sheet>
 
-      <v-sheet
-        class="py-16"
-        color="#181818"
-      >
+      <v-sheet class="py-16" color="#181818">
         <section id="grid">
           <v-container>
+            <!-- Title Section -->
             <v-row justify="center">
-              <v-col cols="auto">
-                <h2 class="text-h3 text-center">
-                  The Numbers 
-                </h2>
-                <h3 class="text-h5 text-center">
-                 Since 2020
-                </h3>
-              </v-col>   
-            </v-row>
-
-            <v-row justify="space-between mt-5">
-              <v-col cols="auto">
-                <h2 class="text-h3 text-center">
-                  5,000+
-                </h2>
-                <h3 class="text-h5">
-                  Clean-up volunteers
-                </h3>
-              </v-col>
-
-              <v-col cols="auto">
-                <h2 class="text-h3 text-center">
-                    100+
-                  </h2>
-                  <h3 class="text-h5">
-                    Blood bags donated
-                  </h3>
-              </v-col>
-
-              <v-col cols="auto">
-                <h2 class="text-h3 text-center">
-                  2,000+ kg
-                </h2>
-                <h3 class="text-h5">
-                  Garbage collected
-                </h3>
+              <v-col cols="12" md="auto">
+                <h2 class="text-h3 text-center">The Numbers</h2>
+                <h3 class="text-h5 text-center">Since 2020</h3>
               </v-col>
             </v-row>
 
-             <v-row justify="center mt-5">
-                <v-col cols="auto">
-                  <h2 class="text-h3 text-center">
-                  1,000+
-                </h2>
-                <h3 class="text-h5">
-                  Mangroves Planted & Parented
-                </h3>
-                  
-                </v-col>
+            <!-- First Stats Row -->
+            <v-row class="stats-row mt-5">
+              <v-col cols="12" md="auto" class="text-center mb-4 mb-md-0">
+                <h2 class="text-h3">5,000+</h2>
+                <h3 class="text-h5">Clean-up volunteers</h3>
+              </v-col>
 
+              <v-col cols="12" md="auto" class="text-center mb-4 mb-md-0">
+                <h2 class="text-h3">100+</h2>
+                <h3 class="text-h5">Blood bags donated</h3>
+              </v-col>
+
+              <v-col cols="12" md="auto" class="text-center">
+                <h2 class="text-h3">2,000+ kg</h2>
+                <h3 class="text-h5">Garbage collected</h3>
+              </v-col>
             </v-row>
-         
+
+            <!-- Second Stats Row -->
+            <v-row justify="center" class="mt-5">
+              <v-col cols="12" md="auto" class="text-center">
+                <h2 class="text-h3">1,000+</h2>
+                <h3 class="text-h5">Mangroves Planted & Parented</h3>
+              </v-col>
+            </v-row>
           </v-container>
         </section>
       </v-sheet>
+
     </v-main>
 
     <v-footer>
       <v-container class="text-overline d-flex align-center justify-space-between">
         <div>
-          Copyright &copy; 2020-{{ (new Date()).getFullYear() }} DOERs
+          Copyright &copy; 2020-{{ (new Date()).getFullYear() }} Dalumpinas Oeste Eco Rangers
         </div>
-
-        <v-icon :icon="mdiInstagram" size="32" color="black" />
+        
       </v-container>
     </v-footer>
   </v-app>
 </template>
 
-<script setup>
-import SvgIcon from '@jamescoyle/vue-icon';
-import { mdiInstagram } from '@mdi/js';
 
 
-</script>
+<style scoped>
+.stats-row {
+  justify-content: center;
+}
+
+@media (min-width: 960px) {
+  .stats-row {
+    justify-content: space-between !important;
+  }
+}
+</style>
