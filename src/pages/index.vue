@@ -19,7 +19,7 @@
           <v-btn text to="/about-us">About Us</v-btn>
           <v-btn text to="/contact-us">Contact Us</v-btn>
           <v-btn text to="/get-involved">Get Involved</v-btn>
-          <v-btn color="primary" class="ml-2">Donate</v-btn>
+          <v-btn color="#26A9E0" class="ml-2" elevated>Donate</v-btn>
         </div>
 
  
@@ -250,6 +250,23 @@
         <div>
           Copyright &copy; 2020-{{ (new Date()).getFullYear() }} Dalumpinas Oeste Eco Rangers
         </div>
+
+        <div class="d-flex align-center" style="gap: 16px;">
+          <a href="https://www.facebook.com/DOERsInAction" target="_blank" rel="noopener" class="social-link">
+            <Icon name="mdi:facebook" size="32" class="social-icon" />
+          </a>
+
+          <a href="https://www.instagram.com/doerslaunion/" target="_blank" rel="noopener" class="social-link">
+            <Icon name="mdi:instagram" size="32" class="social-icon" />
+          </a>
+          <a href="https://www.threads.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
+            <Icon name="simple-icons:threads" size="32" class="social-icon" />
+          </a>
+          
+          <a href="https://www.tiktok.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
+            <Icon name="mdi:tiktok" size="32" class="social-icon" />
+          </a>
+        </div>
         
       </v-container>
     </v-footer>
@@ -267,5 +284,13 @@
   .stats-row {
     justify-content: space-between !important;
   }
+}
+
+.social-icon {
+  color: #666766;
+}
+
+.social-link:hover .social-icon {
+  color: #26A9E0; 
 }
 </style>
