@@ -13,13 +13,11 @@
 
         <v-spacer />
 
-        <v-btn-alt
-          append-icon="mdi-open-in-new"
-          href="https://vuetifyjs.com/components/all/"
-          rel="noopener noreferrer"
-          target="_blank"
-          text="Vuetify Documentation"
-        />
+        <v-btn text to="/">Home</v-btn>
+        <v-btn text to="/about-us">About Us</v-btn>
+        <v-btn text to="/contact-us">Contact Us</v-btn>
+        <v-btn text to="/get-involved">Get Involved</v-btn>
+        <v-btn color="#26A9E0" class="ml-2" variant="elevated">Donate</v-btn>
       </v-container>
     </v-app-bar>
 
