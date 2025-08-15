@@ -103,6 +103,31 @@
     <v-sheet class="py-16">
       <section>
         <v-container>
+          <v-row justify="center">
+            <v-col cols="12" md="auto">
+              <h2 class="text-h3 text-center">2025 Leaderboard</h2>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center">
+            <v-col cols="12" md="auto">
+              <Leaderboard />
+            </v-col>
+            
+          </v-row>
+
+        </v-container>
+
+        <v-container>
+          <v-divider class="my-3" />
+        </v-container>
+
+      </section>
+    </v-sheet>
+
+    <v-sheet>
+      <section>
+        <v-container>
           <v-row justify="space-between">
             <v-col cols="12" md="6">
               <v-responsive width="350">
@@ -218,6 +243,8 @@
 </template>
 
 <script setup>
+import Leaderboard from '@/components/Leaderboard';
+
 useHead({
   title: 'DOERs | Dalumpinas Oeste Eco Rangers'
 })
