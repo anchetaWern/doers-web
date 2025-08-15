@@ -56,27 +56,58 @@
       <slot />
     </v-main>
 
-    <v-footer>
+    <v-footer class="footer">
       <v-container class="text-overline d-flex align-center justify-space-between">
         <div>
-          Copyright &copy; 2020-{{ (new Date()).getFullYear() }} Dalumpinas Oeste Eco Rangers
+          <div>
+            <v-img
+              src="/images/doers-full-logo.png"
+              max-width="100"
+            />
+          </div>
+
+          <div class="text-none">
+          Dalumpinas Oeste, San Fernando City, La Union, Philippines 2500
+          </div>
+
+          
         </div>
 
-        <div class="d-flex align-center" style="gap: 16px;">
-          <a href="https://www.facebook.com/DOERsInAction" target="_blank" rel="noopener" class="social-link">
-            <Icon name="mdi:facebook" size="32" class="social-icon" />
-          </a>
+        <div class="d-flex flex-column text-none">
+          <h2>Get in Touch</h2>
+          <div>
+            doers-email@gmail.com
+          </div>
+          <div>
+            +doers-phonenumber
+          </div>
 
-          <a href="https://www.instagram.com/doerslaunion/" target="_blank" rel="noopener" class="social-link">
-            <Icon name="mdi:instagram" size="32" class="social-icon" />
-          </a>
-          <a href="https://www.threads.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
-            <Icon name="simple-icons:threads" size="32" class="social-icon" />
-          </a>
 
-          <a href="https://www.tiktok.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
-            <Icon name="mdi:tiktok" size="32" class="social-icon" />
-          </a>
+          <div class="mt-3 d-flex justify-space-between">
+            <div class="px-2">
+              <a href="https://www.facebook.com/DOERsInAction" target="_blank" rel="noopener" class="social-link">
+                <Icon name="mdi:facebook" size="32" class="social-icon" />
+              </a>
+            </div>
+
+            <div class="px-2">
+              <a href="https://www.instagram.com/doerslaunion/" target="_blank" rel="noopener" class="social-link">
+                <Icon name="mdi:instagram" size="32" class="social-icon" />
+              </a>
+            </div>
+
+            <div class="px-2">
+              <a href="https://www.threads.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
+                <Icon name="simple-icons:threads" size="32" class="social-icon" />
+              </a>
+            </div>
+
+            <div class="px-2">
+              <a href="https://www.tiktok.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
+                <Icon name="mdi:tiktok" size="32" class="social-icon" />
+              </a>
+            </div>
+          </div>
         </div>
         
       </v-container>
@@ -97,5 +128,9 @@
 
 .social-link:hover .social-icon {
   color: #26A9E0; 
+}
+
+.footer {
+  background-color: #e7e7e7;
 }
 </style>

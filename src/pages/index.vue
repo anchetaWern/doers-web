@@ -1,6 +1,7 @@
 <template>
-
+    
     <section id="hero">
+
       <v-sheet
         class="d-flex align-center pb-16"
         color="grey-darken-3"
@@ -40,9 +41,12 @@
           <v-col cols="12" md="6">
             <v-responsive width="350">
               <h2 class="text-h4">
-                About DOERs
+                Who we are
               </h2>
               <div class="mt-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, 
+                modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
+                perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
               </div>
             </v-responsive>
@@ -66,7 +70,7 @@
           <!-- Title Section -->
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              <h2 class="text-h3 text-center">The Numbers</h2>
+              <h2 class="text-h3 text-center">Our Impact</h2>
               <h3 class="text-h5 text-center">Since 2020</h3>
             </v-col>
           </v-row>
@@ -100,7 +104,73 @@
       </section>
     </v-sheet>
 
-    <v-sheet class="py-16">
+    <v-sheet class="py-8">
+      <section>
+        <v-container>
+          <v-row>
+            <v-col cols="12" md="auto">
+              <h2 class="text-h3">Join Our Efforts</h2>
+            </v-col>
+          </v-row>
+
+          <v-row>
+            <v-col cols="3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, 
+              modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
+              perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+              caecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+              <div>
+                <v-btn class="mt-3" size="large" color="primary" href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
+                Get Involved
+                </v-btn>
+              </div>
+            </v-col>
+
+            <v-col cols="9">
+           
+    <v-img
+  src="/images/home/daily-coastal-cleanup.jpg"
+  class="w-250 w-md-auto"
+  max-width="250"
+  rounded="circle"
+>
+   <template v-slot:default>
+    <div
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5);
+        padding: 8px 12px;
+        border-radius: 8px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      "
+    >
+      Coastal Cleanups
+    </div>
+  </template>
+</v-img>
+
+
+            </v-col>
+            
+          </v-row>
+
+        </v-container>
+
+        <v-container>
+          <v-divider class="my-3" />
+        </v-container>
+
+      </section>
+    </v-sheet>
+
+    <v-sheet class="py-8">
       <section>
         <v-container>
           <v-row justify="center">
@@ -128,117 +198,29 @@
     <v-sheet>
       <section>
         <v-container>
-          <v-row justify="space-between">
-            <v-col cols="12" md="6">
-              <v-responsive width="350">
-                <h2 class="text-h4">
-                  Daily coastal cleanups
-                </h2>
-                <div class="mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
-                </div>
-              </v-responsive>
-            </v-col>
-
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                src="/images/home/daily-coastal-cleanup.jpg"
-                class="w-100 w-md-auto"
-                max-width="600"
-              />
+          <v-row justify="center">
+            <v-col cols="12" md="auto">
+              <h2 class="text-h3 text-center">Our Partners</h2>
             </v-col>
           </v-row>
+
+          <v-row justify="center">
+            <v-col cols="12" md="auto">
+              TODO: logo ng partners?
+            </v-col>
+            
+          </v-row>
+
         </v-container>
-      </section>
 
-      <v-container>
-        <v-divider class="my-12" />
-      </v-container>
-
-      <section id="controls">
         <v-container>
-          <v-row justify="space-between">
-            <v-col cols="auto">
-              <v-responsive width="350">
-                <h2 class="text-h4">
-                  Plogging
-                </h2>
-                <div class="mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
-                </div>
-              </v-responsive>
-            </v-col>
-
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                max-width="600"
-                src="/images/home/plogging.jpg"
-              />
-            </v-col>
-          </v-row>
+          <v-divider class="my-3" />
         </v-container>
+
       </section>
-
-      <v-container>
-        <v-divider class="my-12" />
-      </v-container>
-
-      <section id="grid">
-        <v-container>
-          <v-row justify="space-between">
-            <v-col cols="auto">
-              <v-responsive width="350">
-                <h2 class="text-h4">
-                  Health and wellness
-                </h2>
-                <div class="mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
-                </div>
-
-                
-              </v-responsive>
-            </v-col>
-
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                max-width="600"
-                src="/images/home/health-and-wellness.jpg"
-              />
-            </v-col>
-          </v-row>
-        </v-container>
-      </section>
-
-      <v-container>
-        <v-divider class="my-12" />
-      </v-container>
-
-      <section>
-        <v-container>
-          <v-row justify="space-between">
-            <v-col cols="12" md="6">
-              <v-responsive width="350">
-                <h2 class="text-h4">
-                  Medical Missions
-                </h2>
-                <div class="mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
-                </div>
-              </v-responsive>
-            </v-col>
-
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                src="/images/home/medical-mission.jpg"
-                class="w-100 w-md-auto"
-                max-width="600"
-              />
-            </v-col>
-          </v-row>
-        </v-container>
-      </section>
-
     </v-sheet>
+
+   
 
 </template>
 
@@ -261,6 +243,7 @@ useHead({
   }
 }
 
-
-
+.v-img__img--contain {
+  opacity: 0.5;
+}
 </style>

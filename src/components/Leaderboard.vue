@@ -2,7 +2,7 @@
   <v-table fixed-header>
     <thead>
       <tr>
-        <th class="text-left">Name</th>
+        <th class="text-center">Name</th>
         <th class="text-left">Activities Joined</th>
       </tr>
     </thead>
@@ -14,7 +14,7 @@
           </v-avatar>
           {{ item.name }}
         </td>
-        <td>{{ item.activities }}</td>
+        <td class="text-center">{{ item.activities }}</td>
       </tr>
     </tbody>
   </v-table>
