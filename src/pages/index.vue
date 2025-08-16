@@ -217,7 +217,7 @@
 
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              TODO: logo ng partners?
+              <span class="text-red">TODO: logo ng partners? like SIF care, 585th air base group, BJMP, red cross, LGUs, coast guard, sino pa?</span>
             </v-col>
             
           </v-row>

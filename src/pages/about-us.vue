@@ -134,6 +134,7 @@
                 <h2 class="text-h4">
                   Daily Cleanup Locations
                 </h2>
+                <span class="text-red">not sure ung sa squareville kung may daily tayo don.</span>
                
               </v-responsive>
             </v-col>
