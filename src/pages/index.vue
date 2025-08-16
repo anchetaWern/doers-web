@@ -185,12 +185,12 @@
           </v-row>
 
           <v-row justify="center">
-            <v-col cols="3" md="auto">
+            <v-col cols="12" md="4">
               <h3 class="text-center">Activities</h3>
               <Leaderboard :items="leaders" heading="Activities Joined" />
             </v-col>
 
-            <v-col cols="3" md="auto">
+            <v-col cols="12" md="4">
               <h3 class="text-center">Daily Volunteers</h3>
               <Leaderboard :items="daily_volunteers" heading="Active Days" />
             </v-col>
