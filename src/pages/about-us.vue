@@ -126,11 +126,34 @@
         </v-container>
       </section>
 
+      <section>
+        <v-container>
+          <v-row justify="space-between">
+            <v-col cols="12">
+              <v-responsive>
+                <h2 class="text-h4">
+                  Daily Cleanup Locations
+                </h2>
+               
+              </v-responsive>
+            </v-col>
+
+          
+          </v-row>
+        </v-container>
+      </section>
+      
+      <DailyCleanupLocations />
+
     </v-sheet>
+
+    
 
 </template>
 
 <script setup>
+import DailyCleanupLocations from '@/components/DailyCleanupLocations';
+
 useHead({
   title: 'About Us - DOERs'
 })
