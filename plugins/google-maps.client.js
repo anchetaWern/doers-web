@@ -1,12 +1,12 @@
-import { defineNuxtPlugin } from '#app'
+import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 import VueGoogleMaps from '@fawmi/vue-google-maps'
-const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-
 
 export default defineNuxtPlugin((nuxtApp) => {
+  const config = useRuntimeConfig()
+
   nuxtApp.vueApp.use(VueGoogleMaps, {
     load: {
-      key: apiKey,
+      key: config.public.GOOGLE_MAPS_API_KEY,
     },
   })
 })
