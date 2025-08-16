@@ -6,6 +6,7 @@
         <v-row justify="space-between">
           <v-col cols="12">
             <h1 class="text-h3 mt-5">Who we are</h1>
+            <span class="text-red">Content suggestion: Org chart, vision & mission, sec registered</span>
             <p class="mt-5 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
             perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, 
             voluptatum culpa velit eligendi quidem?</p>
