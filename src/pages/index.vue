@@ -25,7 +25,7 @@
                 Join us in our daily efforts to protect the environment & support our community through coastal cleanups, tree planting, medical missions, and more meaningful initiatives.
               </div>
 
-              <v-btn block href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
+              <v-btn color="#FDBD13" block href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
               Support Us
               </v-btn>
 
@@ -120,7 +120,7 @@
               perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
               caecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
               <div>
-                <v-btn class="mt-3" size="large" color="primary" href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
+                <v-btn class="mt-3" size="large" color="#26A9E0" href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
                 Get Involved
                 </v-btn>
               </div>
@@ -244,7 +244,7 @@ useHead({
 
 const leaders = [
   {
-    name: 'Ferdinand Nones',
+    name: 'Ferdz Nones',
     activities: 250,
     avatar: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
   },

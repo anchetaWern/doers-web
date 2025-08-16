@@ -4,10 +4,14 @@
       <v-container class="d-flex align-center py-0">
         <v-app-bar-title class="pl-0">
           <div class="d-flex align-center">
-            <v-img
-              src="/images/doers-full-logo.png"
-              max-width="100"
-            />
+           
+            <a href="/">
+              <v-img
+                src="/images/doers-full-logo.png"
+                width="100"
+              />
+            </a>
+
           </div>
         </v-app-bar-title>
 
@@ -19,7 +23,7 @@
           <v-btn text class="text-none" to="/about-us">About Us</v-btn>
           <v-btn text class="text-none" to="/contact-us">Contact Us</v-btn>
           <v-btn text class="text-none" to="/get-involved">Get Involved</v-btn>
-          <v-btn color="#26A9E0" class="ml-2" variant="elevated">Donate</v-btn>
+          <v-btn color="#26A9E0" class="ml-2" variant="elevated">Collaborate</v-btn>
         </div>
 
  
