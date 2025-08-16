@@ -180,13 +180,19 @@
         <v-container>
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              <h2 class="text-h3 text-center">2025 Leaderboard</h2>
+              <h2 class="text-h3 text-center">Leaderboards</h2>
             </v-col>
           </v-row>
 
           <v-row justify="center">
-            <v-col cols="12" md="auto">
-              <Leaderboard />
+            <v-col cols="3" md="auto">
+              <h3 class="text-center">Activities</h3>
+              <Leaderboard :items="leaders" heading="Activities Joined" />
+            </v-col>
+
+            <v-col cols="3" md="auto">
+              <h3 class="text-center">Daily Volunteers</h3>
+              <Leaderboard :items="daily_volunteers" heading="Active Days" />
             </v-col>
             
           </v-row>
@@ -235,6 +241,47 @@ import Leaderboard from '@/components/Leaderboard';
 useHead({
   title: 'DOERs | Dalumpinas Oeste Eco Rangers'
 })
+
+const leaders = [
+  {
+    name: 'Ferdinand Nones',
+    activities: 250,
+    avatar: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
+  },
+  {
+    name: 'Rone Beltran',
+    activities: 120,
+    avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
+  },
+  {
+    name: 'Joseph Ferrer',
+    activities: 70,
+    avatar: 'https://cdn-icons-png.flaticon.com/512/616/616485.png',
+  },
+  {
+    name: 'Chris',
+    activities: 65,
+    avatar: 'https://cdn-icons-png.flaticon.com/512/616/616426.png',
+  },
+]
+
+const daily_volunteers = [
+  {
+    name: 'Virginia Espenilla',
+    activities: 250,
+    avatar: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
+  },
+  {
+    name: 'Dadzky',
+    activities: 190,
+    avatar: 'https://cdn-icons-png.flaticon.com/512/616/616432.png',
+  },
+  {
+    name: 'Rogelio Flores Jr.',
+    activities: 120,
+    avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
+  },
+]
 
 const cards = [
   {
