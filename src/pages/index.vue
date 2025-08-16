@@ -113,8 +113,8 @@
             </v-col>
           </v-row>
 
-          <v-row>
-            <v-col cols="3">
+          <v-row align="center">
+            <v-col cols="12" md="3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, 
               modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
               perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
@@ -126,35 +126,40 @@
               </div>
             </v-col>
 
-            <v-col cols="9">
+            <v-col cols="12" md="9">
            
-    <v-img
-  src="/images/home/daily-coastal-cleanup.jpg"
-  class="w-250 w-md-auto"
-  max-width="250"
-  rounded="circle"
->
-   <template v-slot:default>
-    <div
-      style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.5);
-        padding: 8px 12px;
-        border-radius: 8px;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: center;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-      "
-    >
-      Coastal Cleanups
-    </div>
-  </template>
-</v-img>
+              <v-container class="mt-5 overflow-y-auto" id="activities-container">
+
+                  <v-row dense justify="center">
+                    <v-col
+                      v-for="card in cards"
+                      :key="card.title"
+                      cols="12" sm="6" md="4"
+                    >
+                      <v-card>
+
+                        <div class="relative" style="height: 200px; overflow: hidden;">
+                          <img
+                            :src="card.src"
+                            :alt="card.title"
+                            class="w-full h-full object-cover"
+                            style="object-fit: cover; object-position: center; height: 200px; width: 100%;"
+                          />
+                        
+                          <div
+                            class="px-4 py-2"
+                            style="position: absolute; bottom: 0; width: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));"
+                          >
+                            <span class="text-white text-body-2">{{ card.title }}</span>
+                          </div>
+                        </div>
+
+                      </v-card>
+                    </v-col>
+                  </v-row>
+
+                </v-container>
+
 
 
             </v-col>
@@ -230,6 +235,33 @@ import Leaderboard from '@/components/Leaderboard';
 useHead({
   title: 'DOERs | Dalumpinas Oeste Eco Rangers'
 })
+
+const cards = [
+  {
+    title: 'Coastal Cleanups',
+    src: '/images/home/daily-coastal-cleanup.jpg'
+  },
+  {
+    title: 'Brigada Eskwela',
+    src: '/images/home/brigada-eskwela.jpg'
+  },
+  {
+    title: 'Ridge to Reef',
+    src: '/images/home/plogging.jpg'
+  },
+  {
+    title: 'Blood Donation Campaign',
+    src: '/images/home/medical-mission.jpg'
+  },
+  {
+    title: 'Tree Planting & Parenting',
+    src: '/images/home/mangrove.jpg'
+  },
+  {
+    title: 'Speaking Engagements',
+    src: '/images/home/radio-guestings.jpg'
+  }
+];
 </script>
 
 <style scoped>

@@ -107,7 +107,7 @@
             <v-col cols="12" md="6">
               <v-responsive width="350">
                 <h2 class="text-h4">
-                  Medical Missions
+                  Blood Donation Campaign
                 </h2>
                 <div class="mt-5">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?

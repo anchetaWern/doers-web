@@ -67,7 +67,7 @@
           </div>
 
           <div class="text-none">
-          Dalumpinas Oeste, San Fernando City, La Union, Philippines 2500
+          Brgy. Dalumpinas Oeste, San Fernando City, La Union, Philippines 2500
           </div>
 
           
@@ -76,10 +76,10 @@
         <div class="d-flex flex-column text-none">
           <h2>Get in Touch</h2>
           <div>
-            doers-email@gmail.com
+            doerslaunion2023@gmail.com
           </div>
           <div>
-            +doers-phonenumber
+            +63 920 659 9877
           </div>
 
 
@@ -104,7 +104,7 @@
 
             <div class="px-2">
               <a href="https://www.tiktok.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
-                <Icon name="mdi:tiktok" size="32" class="social-icon" />
+                <Icon name="fa6-brands:tiktok" size="30" class="social-icon" />
               </a>
             </div>
           </div>
