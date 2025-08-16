@@ -62,57 +62,65 @@
 
     <v-footer class="footer">
       <v-container class="text-overline d-flex align-center justify-space-between">
-        <div>
-          <div>
-            <v-img
-              src="/images/doers-full-logo.png"
-              max-width="100"
-            />
-          </div>
+   
+        <v-row justify="space-between align-center mt-5 mb-5">
+          <v-col cols="12" md="6">
+            <div>
+              <div>
+                <v-img
+                  src="/images/doers-full-logo.png"
+                  max-width="100"
+                />
+              </div>
 
-          <div class="text-none">
-          Brgy. Dalumpinas Oeste, San Fernando City, La Union, Philippines 2500
-          </div>
-
-          
-        </div>
-
-        <div class="d-flex flex-column text-none">
-          <h2>Get in Touch</h2>
-          <div>
-            doerslaunion2023@gmail.com
-          </div>
-          <div>
-            +63 920 659 9877
-          </div>
-
-
-          <div class="mt-3 d-flex justify-space-between">
-            <div class="px-2">
-              <a href="https://www.facebook.com/DOERsInAction" target="_blank" rel="noopener" class="social-link">
-                <Icon name="mdi:facebook" size="32" class="social-icon" />
-              </a>
+              <div class="text-none">
+              Brgy. Dalumpinas Oeste, San Fernando City, La Union, Philippines 2500
+              </div>
             </div>
+          </v-col>
 
-            <div class="px-2">
-              <a href="https://www.instagram.com/doerslaunion/" target="_blank" rel="noopener" class="social-link">
-                <Icon name="mdi:instagram" size="32" class="social-icon" />
-              </a>
-            </div>
+          <v-col cols="12" md="6" class="d-flex justify-md-end">
+            <div>
+              <h2>Get in Touch</h2>
+              <div>
+                doerslaunion2023@gmail.com
+              </div>
+              <div>
+                +63 920 659 9877
+              </div>
+              <div class="d-flex mt-5">
+                <div class="px-2">
+                  <a href="https://www.facebook.com/DOERsInAction" target="_blank" rel="noopener" class="social-link">
+                    <Icon name="mdi:facebook" size="32" class="social-icon" />
+                  </a>
+                </div>
 
-            <div class="px-2">
-              <a href="https://www.threads.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
-                <Icon name="simple-icons:threads" size="32" class="social-icon" />
-              </a>
-            </div>
+                <div class="px-2">
+                  <a href="https://www.instagram.com/doerslaunion/" target="_blank" rel="noopener" class="social-link">
+                    <Icon name="mdi:instagram" size="32" class="social-icon" />
+                  </a>
+                </div>
 
-            <div class="px-2">
-              <a href="https://www.tiktok.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
-                <Icon name="fa6-brands:tiktok" size="30" class="social-icon" />
-              </a>
+                <div class="px-2">
+                  <a href="https://www.threads.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
+                    <Icon name="simple-icons:threads" size="32" class="social-icon" />
+                  </a>
+                </div>
+
+                <div class="px-2">
+                  <a href="https://www.tiktok.com/@doerslaunion" target="_blank" rel="noopener" class="social-link">
+                    <Icon name="fa6-brands:tiktok" size="30" class="social-icon" />
+                  </a>
+                </div>
+              </div>
+
             </div>
-          </div>
-        </div>
+          </v-col>
+
+
+        </v-row>
+        
+
         
       </v-container>
     </v-footer>
