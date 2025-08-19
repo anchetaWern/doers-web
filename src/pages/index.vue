@@ -78,7 +78,7 @@
           <!-- First Stats Row -->
           <v-row class="stats-row mt-5">
             <v-col cols="12" md="auto" class="text-center mb-4 mb-md-0">
-              <h2 class="text-h3">5,000+</h2>
+              <h2 class="text-h3">500+</h2>
               <h3 class="text-h5">Clean-up volunteers</h3>
             </v-col>
 
