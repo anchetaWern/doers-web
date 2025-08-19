@@ -1,0 +1,54 @@
+<template>
+  <v-card class="mx-auto" max-width="344">
+    <v-img
+      height="200px"
+      :src="item.image"
+      cover
+    ></v-img>
+
+    <v-card-title>
+      {{ item.title }}
+    </v-card-title>
+
+    <v-card-subtitle class="wrap-subtitle">
+      {{ item.description }}
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange-lighten-1"
+        :text="item.link_text"
+        :href="item.link"
+        variant="flat"
+      ></v-btn>
+
+      <v-spacer></v-spacer>
+
+    </v-card-actions>
+
+    
+  </v-card>
+</template>
+
+<script>
+export default {
+  name: "Card",
+  props: {
+    item: {
+      type: Object,
+      required: true
+    }
+  },
+  data: () => ({
+    show: false
+  })
+}
+</script>
+
+<style scoped>
+.wrap-subtitle {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+</style>
