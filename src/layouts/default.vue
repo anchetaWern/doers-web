@@ -23,14 +23,14 @@
           <v-btn text class="text-none" to="/about-us">About Us</v-btn>
           <v-btn text class="text-none" to="/contact-us">Contact Us</v-btn>
           <v-btn text class="text-none" to="/get-involved">Get Involved</v-btn>
-          <v-btn color="#26A9E0" class="ml-2" variant="elevated">Collaborate</v-btn>
+          <v-btn color="#26A9E0" class="ml-2" href="https://docs.google.com/forms/d/e/1FAIpQLSeuu7zi5QiPs7Cytt5fEeO9xAHnpNsQMvcT-qlgfPl3-OK1cg/viewform" target="_blank" variant="elevated">Collaborate</v-btn>
         </div>
 
  
         <v-menu
           v-if="$vuetify.display.smAndDown"
           offset-y
-          :close-on-content-click="false"
+          :close-on-content-click="true"
         >
           <template #activator="{ props }">
             <v-app-bar-nav-icon v-bind="props" />
@@ -82,7 +82,7 @@
           <v-col cols="12" md="6" class="d-flex justify-md-end">
             <div>
               <h2>Get in Touch</h2>
-              <div>
+              <div class="text-none">
                 doerslaunion2023@gmail.com
               </div>
               <div>
