@@ -20,6 +20,7 @@
         :text="item.link_text"
         :href="item.link"
         variant="flat"
+        target="_blank"
       ></v-btn>
 
       <v-spacer></v-spacer>

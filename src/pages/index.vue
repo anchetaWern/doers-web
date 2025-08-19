@@ -120,7 +120,7 @@
               perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
               caecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
               <div>
-                <v-btn class="mt-3" size="large" color="#26A9E0" href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
+                <v-btn class="mt-3" size="large" color="#26A9E0" to="/get-involved">
                 Get Involved
                 </v-btn>
               </div>
