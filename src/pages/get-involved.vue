@@ -1,25 +1,32 @@
 <template>
+  <v-sheet>
     <section>
-        <h1>How You Can Help</h1>
-        <span class="text-red">WIP. Pero ang plan ay expound lang ung "join our efforts" section sa homepage.</span>
+      <v-container>
+        <v-row justify="space-between">
+          <v-col cols="12">
+            <h1 class="text-h3 mt-5">How You Can Help</h1>
+            <span class="text-red">Content suggestion: activity calendar</span>
+            <p class="mt-5 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
+            perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, 
+            voluptatum culpa velit eligendi quidem?</p>
+          </v-col>
+        </v-row>
+      </v-container>
 
-        <v-container>
-          <v-row justify="space-between">
-            <v-col cols="12" md="4" v-for="item in items">
-              <Card :item="item" />
-            </v-col>
+      <v-container>
+        <v-row justify="space-between">
+          <v-col cols="12" md="4" v-for="item in items">
+            <Card :item="item" />
+          </v-col>
 
-           
-          </v-row>
+          
+        </v-row>
 
-        </v-container>
-        
-        
+      </v-container>
 
-        
-
-        
     </section>
+  </v-sheet>
+
 </template>
 
 <script setup>
