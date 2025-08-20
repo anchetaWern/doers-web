@@ -5,8 +5,8 @@
       <v-container>
         <v-row justify="space-between">
           <v-col cols="12">
-            <h1 class="text-h3 mt-5">Who we are</h1>
-            <span class="text-red">Content suggestion: Org chart, vision & mission, sec registered</span>
+            <h1 class="text-h3 font-weight-bold mt-5">Who we are</h1>
+            <span class="text-red">Content suggestion: Org chart, vision & mission, awards, accreditations, being sec registered</span>
             <p class="mt-5 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
             perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, 
             voluptatum culpa velit eligendi quidem?</p>
@@ -20,7 +20,7 @@
           <v-row justify="space-between">
             <v-col cols="12" md="6">
               <v-responsive width="350">
-                <h2 class="text-h4">
+                <h2 class="text-h4 font-weight-medium">
                   Daily coastal cleanups
                 </h2>
                 <div class="mt-5">
@@ -49,7 +49,7 @@
           <v-row justify="space-between">
             <v-col cols="auto">
               <v-responsive width="350">
-                <h2 class="text-h4">
+                <h2 class="text-h4 font-weight-medium">
                   Plogging
                 </h2>
                 <div class="mt-5">
@@ -77,7 +77,7 @@
           <v-row justify="space-between">
             <v-col cols="auto">
               <v-responsive width="350">
-                <h2 class="text-h4">
+                <h2 class="text-h4 font-weight-medium">
                   Health and wellness
                 </h2>
                 <div class="mt-5">
@@ -107,8 +107,8 @@
           <v-row justify="space-between">
             <v-col cols="12" md="6">
               <v-responsive width="350">
-                <h2 class="text-h4">
-                  Blood Donation Campaign
+                <h2 class="text-h4 font-weight-medium">
+                  Blood Donation Drive
                 </h2>
                 <div class="mt-5">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
@@ -126,13 +126,18 @@
           </v-row>
         </v-container>
       </section>
+      
 
       <section>
+        <v-container>
+          <v-divider class="my-12" />
+        </v-container>
+
         <v-container>
           <v-row justify="space-between">
             <v-col cols="12">
               <v-responsive>
-                <h2 class="text-h4">
+                <h2 class="text-h4 font-weight-bold">
                   Daily Cleanup Locations
                 </h2>
                 <span class="text-red">not sure ung sa squareville kung may daily tayo don.</span>

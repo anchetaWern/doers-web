@@ -24,6 +24,7 @@
               <div class="mt-4 mb-2 text-white">
                 Join us in our daily efforts to protect the environment & support our community through coastal cleanups, tree planting, medical missions, and more meaningful initiatives.
               </div>
+              <div class="text-red">Note: need higher quality version of the background image</div>
 
               <v-btn color="#FDBD13" block href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
               Support Us
@@ -40,7 +41,7 @@
         <v-row justify="space-between mt-5 mb-5">
           <v-col cols="12" md="6">
             <v-responsive width="350">
-              <h2 class="text-h4">
+              <h2 class="text-h3 font-weight-bold">
                 Who we are
               </h2>
               <div class="mt-5">
@@ -70,7 +71,8 @@
           <!-- Title Section -->
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              <h2 class="text-h3 text-center">Our Impact</h2>
+              <h2 class="text-h3 font-weight-bold text-center">Our Impact</h2>
+              <div class="text-red">What other stats do we need to highlight here?</div>
               <h3 class="text-h5 text-center">Since 2020</h3>
             </v-col>
           </v-row>
@@ -109,7 +111,8 @@
         <v-container>
           <v-row>
             <v-col cols="12" md="auto">
-              <h2 class="text-h3">Join Our Efforts</h2>
+              <h2 class="text-h3 font-weight-bold">Join Our Efforts</h2>
+              <div class="text-red">What other activities do we need to highlight here?</div>
             </v-col>
           </v-row>
 
@@ -150,7 +153,7 @@
                             class="px-4 py-2"
                             style="position: absolute; bottom: 0; width: 100%; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));"
                           >
-                            <span class="text-white text-body-2">{{ card.title }}</span>
+                            <span class="text-white text-body-1 font-weight-medium">{{ card.title }}</span>
                           </div>
                         </div>
 
@@ -180,7 +183,7 @@
         <v-container>
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              <h2 class="text-h3 text-center">Leaderboards</h2>
+              <h2 class="text-h3 font-weight-bold text-center">Leaderboards</h2>
             </v-col>
           </v-row>
 
@@ -211,13 +214,13 @@
         <v-container>
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              <h2 class="text-h3 text-center">Our Partners</h2>
+              <h2 class="text-h3 font-weight-bold text-center">Our Partners</h2>
             </v-col>
           </v-row>
 
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              <span class="text-red">TODO: logo ng partners? like SIF care, 585th air base group, BJMP, red cross, LGUs, coast guard, sino pa?</span>
+              <span class="text-red">logo ng partners? like SIF care, 585th air base group, BJMP, red cross, LGUs, coast guard, sino pa?</span>
             </v-col>
             
           </v-row>

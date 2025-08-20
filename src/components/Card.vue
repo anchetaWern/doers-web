@@ -6,21 +6,22 @@
       cover
     ></v-img>
 
-    <v-card-title>
+    <v-card-title class="font-weight-medium">
       {{ item.title }}
     </v-card-title>
 
-    <v-card-subtitle class="wrap-subtitle">
+    <v-card-subtitle class="wrap-subtitle h-50">
       {{ item.description }}
     </v-card-subtitle>
 
-    <v-card-actions>
+    <v-card-actions class="mt-3">
       <v-btn
         color="orange-lighten-1"
         :text="item.link_text"
         :href="item.link"
         variant="flat"
         target="_blank"
+        block
       ></v-btn>
 
       <v-spacer></v-spacer>

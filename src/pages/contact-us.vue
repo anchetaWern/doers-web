@@ -4,12 +4,12 @@
       <v-container>
         <v-row justify="space-between">
           <v-col cols="12">
-            <h1 class="text-h3 mt-5">Contact Us</h1>
+            <h1 class="text-h3 mt-5 font-weight-bold">Contact Us</h1>
           </v-col>
         </v-row>
 
         <v-row>
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores. sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vita</p>
           </v-col>
         </v-row>
@@ -27,7 +27,7 @@
               <v-row justify="space-between">
 
                 <v-col cols="12" md="6">
-                  <h3 class="text-h5 mt-5 mb-3">Where to Find Us</h3>
+                  <h3 class="text-h5 mt-5 mb-3 font-weight-medium">Where to Find Us</h3>
                   <div class="py-1">
                     DOER's Headquarters
                   </div>
@@ -39,7 +39,7 @@
                 
 
                 <v-col cols="12" md="6">
-                  <h3 class="text-h5 mt-5 mb-3">Connect with Us</h3>
+                  <h3 class="text-h5 mt-5 mb-3 font-weight-medium">Connect with Us</h3>
 
                   <div class="py-1">
                     doerslaunion2023@gmail.com
