@@ -49,7 +49,7 @@
               <v-list-item-title>Get Involved</v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-btn block color="primary" class="mt-2">Donate</v-btn>
+              <v-btn block color="#26A9E0" class="mt-2" href="https://docs.google.com/forms/d/e/1FAIpQLSeuu7zi5QiPs7Cytt5fEeO9xAHnpNsQMvcT-qlgfPl3-OK1cg/viewform" target="_blank">Collaborate</v-btn>
             </v-list-item>
           </v-list>
         </v-menu>
