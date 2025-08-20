@@ -63,7 +63,7 @@
     <v-footer class="footer">
       <v-container class="text-overline d-flex align-center justify-space-between">
    
-        <v-row justify="space-between align-center mt-5 mb-5">
+        <v-row class="space-between align-center mt-5 mb-5">
           <v-col cols="12" md="6">
             <div>
               <div>

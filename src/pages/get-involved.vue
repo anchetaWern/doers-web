@@ -27,6 +27,34 @@
 
     </section>
 
+
+    <section>
+    
+      <v-container>
+        <v-divider class="my-12" />
+      </v-container>
+
+      <v-container>
+        <v-row>
+          <v-col cols="12" md="auto">
+            <h4 class="text-h4 font-weight-medium">Event Calendar</h4>
+          </v-col>
+        </v-row>
+
+        <v-row justify="space-between">
+          <v-col cols="12">
+
+          
+            <Calendar />
+           
+
+          </v-col>
+        </v-row>
+      </v-container>
+      
+    </section>
+    
+
     
     <section>
       <v-container>
@@ -63,9 +91,10 @@
 </template>
 
 <script setup>
-import DailyCleanupLocations from '@/components/DailyCleanupLocations';
-import OurImpact from '@/sections/OurImpact';
+import DailyCleanupLocations from "@/components/DailyCleanupLocations";
+import OurImpact from "@/sections/OurImpact";
 import Card from "@/components/Card";
+import Calendar from "@/components/Calendar";
 
 useHead({
   title: 'How You Can Help - DOERs'
