@@ -126,31 +126,6 @@
           </v-row>
         </v-container>
       </section>
-      
-
-      <section>
-        <v-container>
-          <v-divider class="my-12" />
-        </v-container>
-
-        <v-container>
-          <v-row justify="space-between">
-            <v-col cols="12">
-              <v-responsive>
-                <h2 class="text-h4 font-weight-bold">
-                  Daily Cleanup Locations
-                </h2>
-                <span class="text-red">not sure ung sa squareville kung may daily tayo don.</span>
-               
-              </v-responsive>
-            </v-col>
-
-          
-          </v-row>
-        </v-container>
-      </section>
-      
-      <DailyCleanupLocations />
 
     </v-sheet>
 
@@ -159,8 +134,6 @@
 </template>
 
 <script setup>
-import DailyCleanupLocations from '@/components/DailyCleanupLocations';
-
 useHead({
   title: 'About Us - DOERs'
 })
