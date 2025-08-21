@@ -25,7 +25,6 @@
               <li>Where: {{ selectedAddress }}</li>
               <li>When: {{ selectedTime }}</li>
             </ul>
-            
           </v-card-text>
         </v-card>
       </v-menu>
@@ -35,67 +34,37 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { useDate } from 'vuetify'
+
+// ✅ accept events as a prop
+const props = defineProps({
+  events: {
+    type: Array,
+    required: true,
+    default: () => []
+  }
+})
 
 const type = ref('month')
 const weekday = ref([0, 1, 2, 3, 4, 5, 6])
 const value = ref([new Date()])
-const events = ref([])
 
 const adapter = useDate()
 
-//
+// menu state
 const menu = ref(false)
 const selectedTitle = ref('')
 const selectedTime = ref('')
-const selectedAddress = ref('');
+const selectedAddress = ref('')
 const menuActivator = ref(null)
 
 function onEventClick(e) {
-  const split = e.target.innerText.split('|');
-  selectedTitle.value = split[0];
-  selectedAddress.value = split[1];
-  selectedTime.value = split[2];
+  const split = e.target.innerText.split('|')
+  selectedTitle.value = split[0]
+  selectedAddress.value = split[1]
+  selectedTime.value = split[2]
   menuActivator.value = e.target // anchor menu to clicked element
   menu.value = true
 }
-//
-
-function getEvents() {
-  events.value = [
-    {
-      title: 'Trash hunt with Philippine Navy | HQ to Lingsat SFC | Aug 19, 5:30am',
-      start: new Date(2025, 7, 19, 5, 30),
-      end: new Date(2025, 7, 19, 6, 30),
-      color: 'blue',
-    },
-    {
-      title: 'Coastal cleanup | Brgy Cabarsican, Bacnotan LU | Aug 19, 6:00am',
-      start: new Date(2025, 7, 19, 6, 0),
-      end: new Date(2025, 7, 19, 7, 0),
-      color: 'red',
-      allDay: true,
-    },
-    {
-      title: 'Tree Planting | Luna LU | Aug 24, 6:30am',
-      start: new Date(2025, 7, 24, 6, 30),
-      end: new Date(2025, 7, 24, 8, 0),
-      color: 'red',
-      allDay: true,
-    },
-    {
-      title: 'Blood letting | Mess Hall, Wallace Air Station, Poro SFC | Aug 29, 8:00am to 12:00pm',
-      start: new Date(2025, 7, 29, 8, 0),
-      end: new Date(2025, 7, 29, 12, 0),
-      color: 'green',
-      allDay: true,
-    },
-  ]
-}
-
-onMounted(() => {
-  getEvents()
-})
-
 </script>
