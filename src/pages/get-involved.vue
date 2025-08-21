@@ -38,14 +38,13 @@
         <v-row>
           <v-col cols="12" md="auto">
             <h4 class="text-h4 font-weight-medium">Event Calendar</h4>
-            <div class="mt-2">Click the event to view more details.</div>
           </v-col>
         </v-row>
 
         <v-row justify="space-between">
           <v-col cols="12">
     
-            <Calendar :events="events" />
+            <EventList :events="events" title="August 2025" />
       
           </v-col>
         </v-row>
