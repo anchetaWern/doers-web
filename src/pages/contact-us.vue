@@ -96,7 +96,12 @@
 import HQLocation from '@/components/HQLocation';
 
 useHead({
-  title: 'Contact Us - DOERs'
+  title: 'Contact Us - DOERs',
+
+  meta: [
+    { hid: 'description', name: 'description', content: 'Contact Us at DOERS. Interested in volunteering with us, collaborate with us, or just wanted to reach out? Send us a message through any of our social links, phone number or email.' },
+    { name: 'robots', content: 'index, follow' }
+  ]
 })
 </script>
 

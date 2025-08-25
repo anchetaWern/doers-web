@@ -172,33 +172,6 @@
       </section>
     </v-sheet>
 
-    <v-sheet>
-      <section>
-        <v-container>
-          <v-row justify="center">
-            <v-col cols="12" md="auto">
-              <h2 class="text-h3 font-weight-bold text-center">Our Partners</h2>
-            </v-col>
-          </v-row>
-
-          <v-row justify="center">
-            <v-col cols="12" md="auto">
-              <span class="text-red">logo ng partners? like SIF care, 585th air base group, BJMP, red cross, LGUs, coast guard, sino pa?</span>
-            </v-col>
-            
-          </v-row>
-
-        </v-container>
-
-        <v-container>
-          <v-divider class="my-3" />
-        </v-container>
-
-      </section>
-    </v-sheet>
-
-   
-
 </template>
 
 <script setup>
@@ -206,7 +179,13 @@ import Leaderboard from '@/components/Leaderboard';
 import OurImpact from '@/sections/OurImpact';
 
 useHead({
-  title: 'DOERs | Dalumpinas Oeste Eco Rangers'
+  title: 'DOERs | Dalumpinas Oeste Eco Rangers',
+
+  meta: [
+    { hid: 'description', name: 'description', content: 'Join us in our DAILY efforts to protect the environment & support our community through Ridge to Reef trashhunts, tree planting & tree growing & more meaningful initiatives.' },
+    { name: 'robots', content: 'index, follow' }
+  ]
+
 })
 
 const leaders = [

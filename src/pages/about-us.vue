@@ -135,6 +135,12 @@
 
 <script setup>
 useHead({
-  title: 'About Us - DOERs'
+  title: 'About Us - DOERs',
+
+  meta: [
+    { hid: 'description', name: 'description', content: 'About Us at DOERS. We are dedicated to protecting the environment and uplifting the community through daily coastal cleanups, tree planting and care, and volunteer-driven initiatives..' },
+    { name: 'robots', content: 'index, follow' }
+  ]
+
 })
 </script>

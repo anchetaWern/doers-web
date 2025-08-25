@@ -96,7 +96,12 @@ import Calendar from "@/components/Calendar";
 import EventList from "@/components/EventList";
 
 useHead({
-  title: 'How You Can Help - DOERs'
+  title: 'How You Can Help - DOERs',
+
+  meta: [
+    { hid: 'description', name: 'description', content: 'You can help us at DOERS by volunteering with us, sending us a donation, or becoming our partner.' },
+    { name: 'robots', content: 'index, follow' }
+  ]
 })
 
 const items = [
