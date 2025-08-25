@@ -127,6 +127,34 @@
         </v-container>
       </section>
 
+      <v-container>
+        <v-divider class="my-12" />
+      </v-container>
+
+
+      <section>
+        <v-container>
+          <v-row justify="space-between">
+            <v-col cols="12" md="6">
+              <v-responsive width="350">
+                <h2 class="text-h4 font-weight-medium">
+                  Org Chart
+                </h2>
+                
+              </v-responsive>
+            </v-col>
+
+          </v-row>
+
+          <v-row>
+            <v-col cols="12">
+              <OrgChart />
+            </v-col>
+          </v-row>
+        </v-container>
+      </section>
+
+
     </v-sheet>
 
     
@@ -134,6 +162,8 @@
 </template>
 
 <script setup>
+import OrgChart from '@/components/OrgChart';
+
 useHead({
   title: 'About Us - DOERs',
 
