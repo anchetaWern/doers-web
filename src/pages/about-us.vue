@@ -6,10 +6,38 @@
         <v-row justify="space-between">
           <v-col cols="12">
             <h1 class="text-h3 font-weight-bold mt-5">Who we are</h1>
-            <span class="text-red">Content suggestion: Org chart, vision & mission, awards, accreditations, being sec registered</span>
-            <p class="mt-5 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
-            perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, 
-            voluptatum culpa velit eligendi quidem?</p>
+      
+            <p class="mt-5 mb-5">Dalumpinas Oeste Eco Rangers (DOERs) is a non profit organization dedicated in ensuring the cleanliness of our roads and beaches, protecting sea turtle nests & hatchlings, conducting feeding programs, tree planting & parenting, blood drives and medical missions.</p>
+          </v-col>
+        </v-row>
+
+
+        <v-row justify="space-between">
+          <v-col cols="12">
+            <h2 class="text-h4 font-weight-bold mt-5">DOERS</h2>
+      
+        
+            <v-card
+              class="mx-auto"
+              max-width="500"
+            >
+              <v-list>
+
+                <v-list-item
+                  v-for="(item, index) in doers_list"
+                  :key="index"
+                >
+                  <v-list-item-content>
+                      <v-list-item-title class="text-wrap">
+                        <strong class="text-h5 font-weight-bold">{{ item.value }}</strong> {{ item.title.substr(1) }}
+                      </v-list-item-title>
+                      
+                    </v-list-item-content>
+                </v-list-item>
+                
+              </v-list>
+            </v-card>
+
           </v-col>
         </v-row>
       </v-container>
@@ -173,4 +201,28 @@ useHead({
   ]
 
 })
+
+const doers_list = [
+  {
+    title: 'Dedicated and commitedly conducting regular ridge to reef activities such as coastal cleanup, plogging, tree planting and parenting',
+    value: 'D'
+  },
+  {
+    title: 'Obediently observe laws and practices on Pawikan Conservation',
+    value: 'O'
+  },
+  {
+    title: 'Excellently disseminate and inform community on global environmental challenges and awareness',
+    value: 'E'
+  },
+  {
+    title: 'Responsibly build local and international linkages; and',
+    value: 'R'
+  },
+  {
+    title: 'Sustainably and efficiently develop, manage and assess projects, programs and activities, resources on environmental conservation and protection',
+    value: 'S'
+  }
+];
+
 </script>
