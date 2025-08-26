@@ -16,8 +16,8 @@
 
       <v-container>
         <v-row justify="space-between">
-          <v-col cols="12" md="4" v-for="item in items">
-            <Card :item="item" />
+          <v-col cols="12" md="4" v-for="(item, index) in items" :class="{ 'mx-auto': index === items.length - 1 }">
+            <Card :item="item" height="300px" />
           </v-col>
 
           
@@ -125,6 +125,13 @@ const items = [
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?',
     link: '#',
     link_text: 'Collaborate',
+  },
+  {
+    image: '/images/get-involved/buy-doers-merch.jpg',
+    title: 'Buy DOERs Merch',
+    description: '100% of the proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?',
+    link: '/merch',
+    link_text: 'Buy',
   },
 ];
 
