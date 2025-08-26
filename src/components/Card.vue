@@ -1,7 +1,7 @@
 <template>
-  <v-card class="mx-auto" max-width="344">
+  <v-card class="mx-auto">
     <v-img
-      height="200px"
+      :height="height"
       :src="item.image"
       cover
     ></v-img>
@@ -10,11 +10,11 @@
       {{ item.title }}
     </v-card-title>
 
-    <v-card-subtitle class="wrap-subtitle h-50">
+    <v-card-subtitle class="wrap-subtitle h-50 pb-3">
       {{ item.description }}
     </v-card-subtitle>
 
-    <v-card-actions class="mt-3">
+    <v-card-actions class="mt-3" v-if="item.link">
       <v-btn
         color="orange-lighten-1"
         :text="item.link_text"
@@ -39,6 +39,10 @@ export default {
     item: {
       type: Object,
       required: true
+    },
+    height: {
+      type: String,
+      required: true,
     }
   },
   data: () => ({
