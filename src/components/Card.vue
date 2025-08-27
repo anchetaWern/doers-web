@@ -3,7 +3,8 @@
     <v-img
       :height="height"
       :src="item.image"
-      cover
+      :cover="!$vuetify.display.smAndDown"
+      :contain="$vuetify.display.smAndDown"
     ></v-img>
 
     <v-card-title class="font-weight-medium">
