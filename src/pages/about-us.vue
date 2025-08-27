@@ -40,19 +40,88 @@
 
           </v-col>
         </v-row>
+
+
+        <v-row justify="space-between">
+          <v-col cols="12">
+            <h2 class="text-h4 font-weight-bold mt-5">Vision</h2>
+
+            <div>
+            Conserve and preserve the environment by promoting awareness and building linkages not only in the local but also in the international stage.
+            </div>
+
+          </v-col>
+        </v-row>
+
+        <v-row justify="space-between">
+          <v-col cols="12">
+            <h2 class="text-h4 font-weight-bold mt-5">Mission</h2>
+
+            <div>
+            The Dalumpinas Oeste Eco Rangers (DOERs) as steward of Mother Earth envisions a sustained green and safe environment and community.
+            </div>
+
+          </v-col>
+        </v-row>
+
+
+        <v-row justify="space-between">
+          <v-col cols="12">
+            <h2 class="text-h4 font-weight-bold mt-5">Core Values</h2>
+
+            <v-card
+              class="mx-auto"
+              max-width="500"
+            >
+              <v-list>
+
+                <v-list-item
+                  v-for="(item, index) in core_values"
+                  :key="index"
+                >
+                  <v-list-item-content>
+                      <v-list-item-title class="text-wrap">
+                        <strong class="text-h5 font-weight-bold">{{ item.value }}</strong> {{ item.title.substr(1) }}
+                      </v-list-item-title>
+                      
+                    </v-list-item-content>
+                </v-list-item>
+                
+              </v-list>
+            </v-card>
+
+          </v-col>
+        </v-row>
+
+
       </v-container>
     </section>
+
+    
     
     <section>
+
+        <v-container>
+          <v-divider class="my-12" />
+        </v-container>
+
         <v-container>
           <v-row justify="space-between">
+            <v-col cols="12">
+              <h1 class="text-h3 font-weight-bold mt-5">What we do</h1>
+        
+              <p class="mt-5 mb-5 text-red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin porttitor massa, non cursus dui finibus vel. Cras ac ex justo. Donec sed vehicula est. Donec non diam pulvinar, rhoncus turpis at, finibus augue. Donec mauris ligula, ultricies gravida varius at, vulputate vel ipsum. Duis eros sapien, pharetra in convallis vitae, malesuada id neque. Phasellus rutrum viverra velit id commodo. Nulla id arcu in enim consequat efficitur. In nec tellus nec lorem interdum scelerisque id ac metus.</p>
+            </v-col>
+          </v-row>
+
+          <v-row justify="space-between align-center">
             <v-col cols="12" md="6">
               <v-responsive width="350">
                 <h2 class="text-h4 font-weight-medium">
-                  Daily coastal cleanups
+                  Trash hunts & plogging
                 </h2>
                 <div class="mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  Our cleanup drive span coastal areas to highways, emphasizing the importance of cleanliness. We aim to educate individuals and organizations on the significance of maintaining cleanliness in every environment, regardless of the scale of the effort involved.
                 </div>
               </v-responsive>
             </v-col>
@@ -68,20 +137,16 @@
         </v-container>
       </section>
 
-      <v-container>
-        <v-divider class="my-12" />
-      </v-container>
-
       <section id="controls">
         <v-container>
-          <v-row justify="space-between">
+          <v-row justify="space-between align-center">
             <v-col cols="auto">
               <v-responsive width="350">
                 <h2 class="text-h4 font-weight-medium">
-                  Plogging
+                  Tree planting
                 </h2>
                 <div class="mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  One of our goals is to create more natural infrastructures to establish safety in our coastal communities in La Union and other areas via planting more Mangrove Trees.
                 </div>
               </v-responsive>
             </v-col>
@@ -89,27 +154,24 @@
             <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
               <v-img
                 max-width="600"
-                src="/images/home/plogging.jpg"
+                src="/images/about/tree-planting.jpg"
               />
             </v-col>
           </v-row>
         </v-container>
       </section>
 
-      <v-container>
-        <v-divider class="my-12" />
-      </v-container>
 
       <section id="grid">
         <v-container>
-          <v-row justify="space-between">
+          <v-row justify="space-between align-center">
             <v-col cols="auto">
               <v-responsive width="350">
                 <h2 class="text-h4 font-weight-medium">
-                  Health and wellness
+                  Turtle nesting & patrol
                 </h2>
                 <div class="mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  We also conduct beach patrolling for turtles at night to check if there are turtles establishing a nest and ensuring the safety of the hatchlings for their upcoming new journey in life.
                 </div>
 
                 
@@ -119,26 +181,22 @@
             <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
               <v-img
                 max-width="600"
-                src="/images/home/health-and-wellness.jpg"
+                src="/images/about/turtle-nesting.jpg"
               />
             </v-col>
           </v-row>
         </v-container>
       </section>
 
-      <v-container>
-        <v-divider class="my-12" />
-      </v-container>
-
       <section>
         <v-container>
-          <v-row justify="space-between">
+          <v-row justify="space-between align-center">
             <v-col cols="12" md="6">
               <v-responsive width="350">
                 <h2 class="text-h4 font-weight-medium">
-                  Blood Donation Drive
+                  Volunteer Activities
                 </h2>
-                <div class="mt-5">
+                <div class="mt-5 text-red">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
                 </div>
               </v-responsive>
@@ -163,11 +221,14 @@
       <section>
         <v-container>
           <v-row justify="space-between">
-            <v-col cols="12" md="6">
-              <v-responsive width="350">
-                <h2 class="text-h4 font-weight-medium">
+            <v-col cols="12">
+              <v-responsive>
+                <h2 class="text-h3 font-weight-bold">
                   Org Chart
                 </h2>
+                <div class="mt-5 text-red">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                </div>
                 
               </v-responsive>
             </v-col>
@@ -224,5 +285,29 @@ const doers_list = [
     value: 'S'
   }
 ];
+
+const core_values = [
+  {
+    title: 'Excellent',
+    value: 'E'
+  },
+  {
+    title: 'Active and',
+    value: 'A'
+  },
+  {
+    title: 'Responsible organization',
+    value: 'R'
+  },
+  {
+    title: 'Towards a',
+    value: 'T'
+  },
+  {
+    title: 'Harmonious and safe Mother Earth.',
+    value: 'H'
+  }
+];
+
 
 </script>

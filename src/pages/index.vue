@@ -38,17 +38,14 @@
 
     <section>
       <v-container>
-        <v-row justify="space-between mt-5 mb-5">
+        <v-row justify="space-between align-center mt-5 mb-5">
           <v-col cols="12" md="6">
             <v-responsive width="350">
               <h2 class="text-h3 font-weight-bold">
                 Who we are
               </h2>
               <div class="mt-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, 
-                modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
-                perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                Dalumpinas Oeste Eco Rangers (DOERs) is a non profit organization dedicated in ensuring the cleanliness of our roads and beaches, protecting sea turtle nests & hatchlings, conducting feeding programs, tree planting & parenting, blood drives and medical missions.
               </div>
             </v-responsive>
           </v-col>
@@ -80,7 +77,7 @@
           </v-row>
 
           <v-row align="center">
-            <v-col cols="12" md="3">
+            <v-col cols="12" md="3" class="text-red">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, 
               modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
               perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
