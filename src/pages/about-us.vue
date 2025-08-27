@@ -193,11 +193,11 @@
           <v-row justify="space-between align-center">
             <v-col cols="12" md="6">
               <v-responsive width="350">
-                <h2 class="text-h4 font-weight-medium">
+                <h2 class="text-h4 font-weight-medium text-red">
                   Volunteer Activities
                 </h2>
                 <div class="mt-5 text-red">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                  The organization delves not only on environmental matters but also links with other organizations which are into other aspects like health, feeding programs, blood letting, medical missions, awareness campaigns.
                 </div>
               </v-responsive>
             </v-col>
@@ -210,6 +210,59 @@
               />
             </v-col>
           </v-row>
+        </v-container>
+      </section>
+
+      <v-container>
+        <v-divider class="my-12" />
+      </v-container>
+
+      <section>
+        <v-container>
+          <v-row justify="space-between">
+            <v-col cols="12">
+              <v-responsive>
+                <h2 class="text-h3 font-weight-bold">
+                  Awards and Features
+                </h2>
+                <div class="mt-5 text-red">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                </div>
+                
+              </v-responsive>
+            </v-col>
+
+          </v-row>
+
+          <v-row justify="space-between">
+            <v-col cols="12">
+              
+              <v-card
+                class="mx-auto"
+              >
+                <v-list>
+                  <template v-for="(item, index) in awards" :key="index">
+                    <v-list-item :min-height="60" :class="[
+                      $vuetify.display.smAndDown ? 'py-4' : 'py-2'
+                    ]">
+                      <v-list-item-content>
+                        <v-list-item-title class="text-wrap">
+                          {{ item.title }}
+                        </v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-divider v-if="index < awards.length - 1" />
+                  </template>
+                </v-list>
+
+              </v-card>
+
+            </v-col>
+          </v-row>
+
+
+
         </v-container>
       </section>
 
@@ -309,5 +362,34 @@ const core_values = [
   }
 ];
 
+const awards = [
+  {
+    title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award)'
+  },
+  {
+    title: 'Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award)'
+  },
+  {
+    title: 'Recognized as the Lifetime Service partner and Hall of Fame for 2022-2023 by the Innerwheel Club of San Fernando, La Union District 379'
+  },
+  {
+    title: 'Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy)'
+  },
+  {
+    title: 'Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union'
+  },
+  {
+    title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024'
+  },
+  {
+    title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024'
+  },
+  {
+    title: 'Featured on the Hello Surftown’s third issue as the DOERs of Good'
+  },
+  {
+    title: 'Have numerous features by the City Government of San Fernando, La Union focusing on the activities done by the group to promote a healthier and cleaner ocean.'
+  }
+]
 
 </script>
