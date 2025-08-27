@@ -14,13 +14,14 @@
 
         <v-row justify="space-between">
           <v-col cols="12">
-            <h2 class="text-h4 font-weight-bold mt-5">DOERS</h2>
+            
       
         
             <v-card
               class="mx-auto"
               max-width="500"
             >
+              <h2 class="text-h4 font-weight-bold mt-3 ml-4">DOERS</h2>
               <v-list>
 
                 <v-list-item
@@ -44,37 +45,45 @@
 
         <v-row justify="space-between">
           <v-col cols="12">
-            <h2 class="text-h4 font-weight-bold mt-5">Vision</h2>
-
-            <div>
-            Conserve and preserve the environment by promoting awareness and building linkages not only in the local but also in the international stage.
-            </div>
-
-          </v-col>
-        </v-row>
-
-        <v-row justify="space-between">
-          <v-col cols="12">
-            <h2 class="text-h4 font-weight-bold mt-5">Mission</h2>
-
-            <div>
-            The Dalumpinas Oeste Eco Rangers (DOERs) as steward of Mother Earth envisions a sustained green and safe environment and community.
-            </div>
-
-          </v-col>
-        </v-row>
-
-
-        <v-row justify="space-between">
-          <v-col cols="12">
-            <h2 class="text-h4 font-weight-bold mt-5">Core Values</h2>
-
+      
             <v-card
-              class="mx-auto"
+              class="mx-auto px-3 py-3"
+              max-width="500"
+            >
+              <h2 class="text-h4 font-weight-bold">Vision</h2>
+              <div>
+              Conserve and preserve the environment by promoting awareness and building linkages not only in the local but also in the international stage.
+              </div>
+            </v-card>
+
+          </v-col>
+        </v-row>
+
+        <v-row justify="space-between">
+          <v-col cols="12">
+      
+            <v-card
+              class="mx-auto px-3 py-3"
+              max-width="500"
+            >
+              <h2 class="text-h4 font-weight-bold">Mission</h2>
+              <div>
+              The Dalumpinas Oeste Eco Rangers (DOERs) as steward of Mother Earth envisions a sustained green and safe environment and community.
+              </div>
+            </v-card>
+
+          </v-col>
+        </v-row>
+
+        <v-row justify="space-between">
+          <v-col cols="12">
+            
+            <v-card
+              class="mx-auto py-3"
               max-width="500"
             >
               <v-list>
-
+                <h2 class="text-h4 font-weight-bold ml-3">Core Values</h2>
                 <v-list-item
                   v-for="(item, index) in core_values"
                   :key="index"
