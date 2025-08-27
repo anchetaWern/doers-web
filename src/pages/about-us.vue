@@ -277,6 +277,58 @@
             <v-col cols="12">
               <v-responsive>
                 <h2 class="text-h3 font-weight-bold">
+                  2024 Accomplishments
+                </h2>
+                <div class="mt-5 text-red">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                </div>
+                
+              </v-responsive>
+            </v-col>
+
+          </v-row>
+
+          <v-row justify="space-between">
+            <v-col cols="12">
+              
+              <v-card
+                class="mx-auto"
+              >
+                <v-list>
+                  <template v-for="(item, index) in accomplishments" :key="index">
+                    <v-list-item :min-height="60" :class="[
+                      $vuetify.display.smAndDown ? 'py-4' : 'py-2'
+                    ]">
+                      <v-list-item-content>
+                        
+                        <v-list-item-title class="text-wrap">
+                         <div style="display:inline-block; width: 50px; text-align: right;"><strong class="text-h5 font-weight-bold">{{ item.value }}</strong></div> {{ item.title }}
+                        </v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-divider v-if="index < accomplishments.length - 1" />
+                  </template>
+                </v-list>
+
+              </v-card>
+
+            </v-col>
+          </v-row>
+
+        </v-container>
+      </section>
+
+      <v-container>
+        <v-divider class="my-12" />
+      </v-container>
+      
+      <section>
+        <v-container>
+          <v-row justify="space-between">
+            <v-col cols="12">
+              <v-responsive>
+                <h2 class="text-h3 font-weight-bold">
                   Org Chart
                 </h2>
                 <div class="mt-5 text-red">
@@ -364,32 +416,47 @@ const core_values = [
 
 const awards = [
   {
-    title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award)'
+    title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award).'
   },
   {
-    title: 'Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award)'
+    title: 'Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award).'
   },
   {
-    title: 'Recognized as the Lifetime Service partner and Hall of Fame for 2022-2023 by the Innerwheel Club of San Fernando, La Union District 379'
+    title: 'Recognized as the Lifetime Service partner and Hall of Fame for 2022-2023 by the Innerwheel Club of San Fernando, La Union District 379.'
   },
   {
-    title: 'Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy)'
+    title: 'Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy).'
   },
   {
-    title: 'Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union'
+    title: 'Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union.'
   },
   {
-    title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024'
+    title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024.'
   },
   {
-    title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024'
+    title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024.'
   },
   {
-    title: 'Featured on the Hello Surftown’s third issue as the DOERs of Good'
+    title: 'Featured on the Hello Surftown’s third issue as the DOERs of Good.'
   },
   {
     title: 'Have numerous features by the City Government of San Fernando, La Union focusing on the activities done by the group to promote a healthier and cleaner ocean.'
   }
-]
+];
 
+const accomplishments = [
+  { "value": 742, "title": "daily clean-ups (simultaneously at Dalumpinas Oeste, San Francisco and some other parts of La Union)" },
+  { "value": 26, "title": "tree planting activities while 97 days of tree growing and monitoring" },
+  { "value": 13, "title": "plogging activities at San Fernando and San Juan, La Union" },
+  { "value": 7, "title": "turtle releases and 124 days of turtle patrolling" },
+  { "value": 35, "title": "online and face to face speaking engagements" },
+  { "value": 23, "title": "program planning with various environmental groups" },
+  { "value": 26, "title": "bloodletting activities" },
+  { "value": 48, "title": "acudetox and meditation sessions" },
+  { "value": 54, "title": "various activities focused on health (e.g. medical missions, awareness campaigns, health caravans etc.)" },
+  { "value": 15, "title": "fun runs/run with a cause and zumba sessions" },
+  { "value": 12, "title": "gift giving and feeding sessions" },
+  { "value": 9, "title": "various capacity building trainings attended" },
+  { "value": 16, "title": "awards and recognitions received from different organizations" }
+];
 </script>
