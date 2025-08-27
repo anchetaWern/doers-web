@@ -50,7 +50,7 @@
               class="mx-auto px-3 py-3"
               max-width="500"
             >
-              <h2 class="text-h4 font-weight-bold">Vision</h2>
+              <h2 class="text-h4 font-weight-bold mb-2">Vision</h2>
               <div>
               Conserve and preserve the environment by promoting awareness and building linkages not only in the local but also in the international stage.
               </div>
@@ -66,7 +66,7 @@
               class="mx-auto px-3 py-3"
               max-width="500"
             >
-              <h2 class="text-h4 font-weight-bold">Mission</h2>
+              <h2 class="text-h4 font-weight-bold mb-2">Mission</h2>
               <div>
               The Dalumpinas Oeste Eco Rangers (DOERs) as steward of Mother Earth envisions a sustained green and safe environment and community.
               </div>
@@ -107,9 +107,7 @@
     </section>
 
     
-    
-    <section>
-
+      <section>
         <v-container>
           <v-divider class="my-12" />
         </v-container>
@@ -123,102 +121,14 @@
             </v-col>
           </v-row>
 
-          <v-row justify="space-between align-center">
-            <v-col cols="12" md="6">
-              <v-responsive width="350">
-                <h2 class="text-h4 font-weight-medium">
-                  Trash hunts & plogging
-                </h2>
-                <div class="mt-5">
-                  Our cleanup drive span coastal areas to highways, emphasizing the importance of cleanliness. We aim to educate individuals and organizations on the significance of maintaining cleanliness in every environment, regardless of the scale of the effort involved.
-                </div>
-              </v-responsive>
+
+          <v-row justify="space-between">
+            <v-col cols="12" md="6" v-for="(item, index) in what_we_do" :class="{ 'mx-auto': index === what_we_do.length - 1 }">
+              <Card :item="item" height="400px" />
             </v-col>
 
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                src="/images/home/daily-coastal-cleanup.jpg"
-                class="w-100 w-md-auto"
-                max-width="600"
-              />
-            </v-col>
           </v-row>
-        </v-container>
-      </section>
-
-      <section id="controls">
-        <v-container>
-          <v-row justify="space-between align-center">
-            <v-col cols="auto">
-              <v-responsive width="350">
-                <h2 class="text-h4 font-weight-medium">
-                  Tree planting
-                </h2>
-                <div class="mt-5">
-                  One of our goals is to create more natural infrastructures to establish safety in our coastal communities in La Union and other areas via planting more Mangrove Trees.
-                </div>
-              </v-responsive>
-            </v-col>
-
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                max-width="600"
-                src="/images/about/tree-planting.jpg"
-              />
-            </v-col>
-          </v-row>
-        </v-container>
-      </section>
-
-
-      <section id="grid">
-        <v-container>
-          <v-row justify="space-between align-center">
-            <v-col cols="auto">
-              <v-responsive width="350">
-                <h2 class="text-h4 font-weight-medium">
-                  Turtle nesting & patrol
-                </h2>
-                <div class="mt-5">
-                  We also conduct beach patrolling for turtles at night to check if there are turtles establishing a nest and ensuring the safety of the hatchlings for their upcoming new journey in life.
-                </div>
-
-                
-              </v-responsive>
-            </v-col>
-
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                max-width="600"
-                src="/images/about/turtle-nesting.jpg"
-              />
-            </v-col>
-          </v-row>
-        </v-container>
-      </section>
-
-      <section>
-        <v-container>
-          <v-row justify="space-between align-center">
-            <v-col cols="12" md="6">
-              <v-responsive width="350">
-                <h2 class="text-h4 font-weight-medium text-red">
-                  Volunteer Activities
-                </h2>
-                <div class="mt-5 text-red">
-                  The organization delves not only on environmental matters but also links with other organizations which are into other aspects like health, feeding programs, blood letting, medical missions, awareness campaigns.
-                </div>
-              </v-responsive>
-            </v-col>
-
-            <v-col cols="12" md="6" class="d-flex justify-end justify-md-start">
-              <v-img
-                src="/images/home/medical-mission.jpg"
-                class="w-100 w-md-auto"
-                max-width="600"
-              />
-            </v-col>
-          </v-row>
+        
         </v-container>
       </section>
 
@@ -467,5 +377,33 @@ const accomplishments = [
   { "value": 12, "title": "gift giving and feeding sessions" },
   { "value": 9, "title": "various capacity building trainings attended" },
   { "value": 16, "title": "awards and recognitions received from different organizations" }
+];
+
+
+const what_we_do = [
+  {
+    image: '/images/about/trash-hunt.jpg',
+    title: 'Trash hunts & plogging',
+    description: 'Our cleanup drive span coastal areas to highways, emphasizing the importance of cleanliness. We aim to educate individuals and organizations on the significance of maintaining cleanliness in every environment, regardless of the scale of the effort involved.',
+
+  },
+  {
+    image: '/images/about/tree-planting-activity.jpg',
+    title: 'Tree Planting',
+    description: 'One of our goals is to create more natural infrastructures to establish safety in our coastal communities in La Union and other areas via planting more Mangrove Trees.',
+   
+  },
+  {
+    image: '/images/about/turtle-releasing.jpg',
+    title: 'Turtle nesting and patrol',
+    description: 'We also conduct beach patrolling for turtles at night to check if there are turtles establishing a nest and ensuring the safety of the hatchlings for their upcoming new journey in life.',
+  
+  },
+  {
+    image: '/images/about/blood-donation.jpg',
+    title: 'Volunteer Activities',
+    description: 'The organization delves not only on environmental matters but also links with other organizations which are into other aspects like health, feeding programs, blood letting, medical missions, awareness campaigns.',
+   
+  },
 ];
 </script>
