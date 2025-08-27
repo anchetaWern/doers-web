@@ -48,7 +48,7 @@ useHead({
 const items = [
   {
     image: '/images/merch/doers-keychain.jpg',
-    title: 'DOERs Keychain',
+    title: 'Pawikan Keychain',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae.',
    
   },
@@ -66,7 +66,7 @@ const items = [
   },
   {
     image: '/images/merch/doers-seabon.jpg',
-    title: 'DOERs Seabon',
+    title: 'Seabon',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae.',
    
   },
