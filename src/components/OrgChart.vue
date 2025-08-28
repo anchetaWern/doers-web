@@ -4,9 +4,9 @@
     <!-- Top Level: Founder + Co-Founder -->
     <div class="org-children">
       <div class="org-node" v-for="person in founders" :key="person.id">
-        <v-card class="pa-3" color="#FDBF12" dark>
-          <v-card-title class="text-h6">{{ person.title }}</v-card-title>
-          <v-card-subtitle>{{ person.name }}</v-card-subtitle>
+        <v-card class="pa-0" color="#FDBF12" dark>
+          <v-card-title class="text-body-1">{{ person.name }}</v-card-title>
+          <v-card-subtitle>{{ person.title }}</v-card-subtitle>
         </v-card>
       </div>
     </div>
@@ -14,9 +14,9 @@
     <!-- Level 2: President + Vice President -->
     <div class="org-children">
       <div class="org-node" v-for="person in executives" :key="person.id">
-        <v-card class="pa-3" color="#26A9E0" dark>
-          <v-card-title class="text-h6">{{ person.title }}</v-card-title>
-          <v-card-subtitle>{{ person.name }}</v-card-subtitle>
+        <v-card class="pa-0" color="#26A9E0" dark>
+          <v-card-title class="text-body-1">{{ person.name }}</v-card-title>
+          <v-card-subtitle>{{ person.title }}</v-card-subtitle>
         </v-card>
       </div>
     </div>
@@ -24,9 +24,9 @@
     <!-- Level 3: Secretary -->
     <div class="org-children">
       <div class="org-node">
-        <v-card class="pa-3" color="#71A374" dark>
-          <v-card-title class="text-h6">Secretary</v-card-title>
-          <v-card-subtitle>Chris G.</v-card-subtitle>
+        <v-card class="pa-0" color="#71A374" dark>
+          <v-card-title class="text-body-1">Chris G.</v-card-title>
+          <v-card-subtitle>Secretary</v-card-subtitle>
         </v-card>
       </div>
     </div>
@@ -56,7 +56,7 @@ const executives = [
 /* Shared styles for all nodes */
 .org-node {
   position: relative;
-  margin: 0 20px;
+  margin: 0 5px;
 }
 
 /* Children container */
