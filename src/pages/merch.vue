@@ -41,7 +41,22 @@ useHead({
 
   meta: [
     { hid: 'description', name: 'description', content: '100% of proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities.' },
-    { name: 'robots', content: 'index, follow' }
+    { name: 'robots', content: 'index, follow' },
+
+
+    // Open Graph (Facebook, LinkedIn, etc.)
+    { property: 'og:title', content: 'Merch - DOERs' },
+    { property: 'og:description', content: '100% of proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities.' },
+    { property: 'og:image', content: 'https://doers-web.vercel.app/images/merch/doers-keychain.jpg' }, // full URL required
+    { property: 'og:url', content: 'https://doers-web.vercel.app/merch' },
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Merch - DOERs' },
+    { name: 'twitter:description', content: '100% of proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities.' },
+    { name: 'twitter:image', content: 'https://doers-web.vercel.app/images/merch/doers-keychain.jpg' }
+
   ]
 })
 
