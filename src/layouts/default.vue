@@ -1,5 +1,5 @@
 <template>
-  <Analytics />
+
   <v-app>
     <v-app-bar>
       <v-container class="d-flex align-center py-0">
@@ -131,10 +131,6 @@
     </v-footer>
   </v-app>
 </template>
-
-<script>
-import { Analytics } from '@vercel/analytics/nuxt'
-</script>
 
 <style scoped>
 .btn.active {
