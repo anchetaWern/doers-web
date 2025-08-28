@@ -109,7 +109,7 @@
     
       <section>
         <v-container>
-          <v-divider class="my-12" />
+          <v-divider />
         </v-container>
 
         <v-container>
@@ -133,7 +133,7 @@
       </section>
 
       <v-container>
-        <v-divider class="my-12" />
+        <v-divider />
       </v-container>
 
       <section>
@@ -186,7 +186,7 @@
       </section>
 
       <v-container>
-        <v-divider class="my-12" />
+        <v-divider />
       </v-container>
 
 
@@ -239,7 +239,7 @@
       </section>
 
       <v-container>
-        <v-divider class="my-12" />
+        <v-divider />
       </v-container>
       
       <section>
