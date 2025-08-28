@@ -131,7 +131,9 @@
   </v-app>
 </template>
 
-
+<script>
+import { Analytics } from '@vercel/analytics/nuxt'
+</script>
 
 <style scoped>
 .btn.active {
