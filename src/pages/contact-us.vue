@@ -9,7 +9,7 @@
         </v-row>
 
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="text-red">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores. sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vita</p>
           </v-col>
         </v-row>
