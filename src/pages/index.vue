@@ -17,7 +17,7 @@
               elevation="0"
               rounded="lg"
             >
-              <h3 class="text-h3 text-white">
+              <h3 class="text-h3 text-white font-weight-bold">
                 Become a DOER!
               </h3>
 
