@@ -4,7 +4,7 @@
       :height="height"
       :src="item.image"
       cover
-      position="top center"
+      :position="$vuetify.display.smAndDown ? 'top center' : 'center'"
     ></v-img>
 
     <v-card-title class="font-weight-medium">
