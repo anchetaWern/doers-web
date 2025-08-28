@@ -196,7 +196,7 @@
             <v-col cols="12">
               <v-responsive>
                 <h2 class="text-h3 font-weight-bold">
-                  2024 Accomplishments
+                  Achievements in 2024
                 </h2>
                 <div class="mt-5 text-red">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
