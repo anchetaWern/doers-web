@@ -4,7 +4,7 @@
     <!-- Top Level: Founder + Co-Founder -->
     <div class="org-children">
       <div class="org-node" v-for="person in founders" :key="person.id">
-        <v-card class="pa-0" color="#FDBF12" dark>
+        <v-card class="px-0 py-2" color="#FDBF12" dark>
           <v-card-title class="text-body-1">{{ person.name }}</v-card-title>
           <v-card-subtitle>{{ person.title }}</v-card-subtitle>
         </v-card>
@@ -14,7 +14,7 @@
     <!-- Level 2: President + Vice President -->
     <div class="org-children">
       <div class="org-node" v-for="person in executives" :key="person.id">
-        <v-card class="pa-0" color="#26A9E0" dark>
+        <v-card class="px-0 py-2" color="#26A9E0" dark>
           <v-card-title class="text-body-1">{{ person.name }}</v-card-title>
           <v-card-subtitle>{{ person.title }}</v-card-subtitle>
         </v-card>
@@ -24,7 +24,7 @@
     <!-- Level 3: Secretary -->
     <div class="org-children">
       <div class="org-node">
-        <v-card class="pa-0" color="#71A374" dark>
+        <v-card class="px-0 py-2" color="#71A374" dark>
           <v-card-title class="text-body-1">Chris G.</v-card-title>
           <v-card-subtitle>Secretary</v-card-subtitle>
         </v-card>
