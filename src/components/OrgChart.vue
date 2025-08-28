@@ -16,7 +16,7 @@
       <div class="org-node" v-for="person in executives" :key="person.id">
         <v-card class="px-0 py-2" color="#26A9E0" dark>
           <v-card-title class="text-body-1">{{ person.name }}</v-card-title>
-          <v-card-subtitle>{{ person.title }}</v-card-subtitle>
+          <v-card-subtitle class="custom-subtitle">{{ person.title }}</v-card-subtitle>
         </v-card>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="org-node">
         <v-card class="px-0 py-2" color="#71A374" dark>
           <v-card-title class="text-body-1">Chris G.</v-card-title>
-          <v-card-subtitle>Secretary</v-card-subtitle>
+          <v-card-subtitle class="custom-subtitle">Secretary</v-card-subtitle>
         </v-card>
       </div>
     </div>
@@ -92,5 +92,11 @@ const executives = [
 /* Remove horizontal line when only 1 child */
 .org-children:only-child::before {
   display: none;
+}
+
+.custom-subtitle {
+  font-size: 14px;
+  color: white !important; /* overrides Vuetify's rgba(255,255,255,0.7) */
+  opacity: 0.9;
 }
 </style>

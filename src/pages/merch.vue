@@ -10,14 +10,14 @@
 
         <v-row>
           <v-col cols="12" md="6">
-            <p>100% of the proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores. sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vita</p>
-            <v-btn color="#FFA726" class="mt-2" href="https://www.facebook.com/DOERsInAction" target="_blank" variant="elevated">Order via Facebook</v-btn>
+            <p>100% of the proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities. </p>
+            <v-btn color="#FFA726" class="mt-5" href="https://www.facebook.com/DOERsInAction" target="_blank" variant="elevated">Order via Facebook</v-btn>
           </v-col>
         </v-row>
 
       </v-container>
 
-      <v-container>
+      <v-container class="mt-10 mb-10">
         <v-row justify="space-between">
           <v-col cols="12" md="3" v-for="item in items">
             <Card :item="item" height="250px" />
