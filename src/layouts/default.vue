@@ -1,4 +1,5 @@
 <template>
+  <Analytics />
   <v-app>
     <v-app-bar>
       <v-container class="d-flex align-center py-0">
