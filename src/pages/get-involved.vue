@@ -5,9 +5,8 @@
         <v-row justify="space-between">
           <v-col cols="12">
             <h1 class="text-h3 mt-5 font-weight-bold">How You Can Help</h1>
-            <div class="text-red">Content suggestion: activity calendar, past activities, partners/collaborations.</div>
             <div class="text-red">Note: maybe we need a separate google form for donations and partners.</div> 
-            <p class="mt-5 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
+            <p class="mt-5 mb-5 text-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
             perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, 
             voluptatum culpa velit eligendi quidem?</p>
           </v-col>
