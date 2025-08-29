@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/nuxt'
 <template>
   
   <v-app>
-    <Analytics />
+    <Analytics mode="production" />
     <v-app-bar>
       <v-container class="d-flex align-center py-0">
         <v-app-bar-title class="pl-0">
