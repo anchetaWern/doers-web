@@ -1,6 +1,11 @@
-<template>
+<script setup>
+import { Analytics } from '@vercel/analytics/nuxt'
+</script>
 
+<template>
+  
   <v-app>
+    <Analytics />
     <v-app-bar>
       <v-container class="d-flex align-center py-0">
         <v-app-bar-title class="pl-0">
