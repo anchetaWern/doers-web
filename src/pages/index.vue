@@ -180,7 +180,21 @@ useHead({
 
   meta: [
     { hid: 'description', name: 'description', content: 'Join us in our DAILY efforts to protect the environment & support our community through Ridge to Reef trashhunts, tree planting & tree growing & more meaningful initiatives.' },
-    { name: 'robots', content: 'index, follow' }
+    { name: 'robots', content: 'index, follow' },
+
+    // Open Graph (Facebook, LinkedIn, etc.)
+    { property: 'og:title', content: 'DOERs | Dalumpinas Oeste Eco Rangers' },
+    { property: 'og:description', content: 'Join us in our DAILY efforts to protect the environment & support our community through Ridge to Reef trashhunts, tree planting & tree growing & more meaningful initiatives.' },
+    { property: 'og:image', content: 'https://doers-web.vercel.app/images/home/daily-coastal-cleanup.jpg' }, // full URL required
+    { property: 'og:url', content: 'https://doers-web.vercel.app' },
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'DOERs | Dalumpinas Oeste Eco Rangers' },
+    { name: 'twitter:description', content: 'Join us in our DAILY efforts to protect the environment & support our community through Ridge to Reef trashhunts, tree planting & tree growing & more meaningful initiatives.' },
+    { name: 'twitter:image', content: 'https://doers-web.vercel.app/images/home/daily-coastal-cleanup.jpg' }
+
   ]
 
 })

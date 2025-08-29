@@ -100,7 +100,20 @@ useHead({
 
   meta: [
     { hid: 'description', name: 'description', content: 'Contact Us at DOERS. Interested in volunteering with us, collaborate with us, or just wanted to reach out? Send us a message through any of our social links, phone number or email.' },
-    { name: 'robots', content: 'index, follow' }
+    { name: 'robots', content: 'index, follow' },
+
+    // Open Graph (Facebook, LinkedIn, etc.)
+    { property: 'og:title', content: 'Contact Us - DOERs' },
+    { property: 'og:description', content: 'Contact Us at DOERS. Interested in volunteering with us, collaborate with us, or just wanted to reach out? Send us a message through any of our social links, phone number or email.' },
+ 
+    { property: 'og:url', content: 'https://doers-web.vercel.app/contact-us' },
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card
+    { name: 'twitter:title', content: 'Contact Us - DOERs' },
+    { name: 'twitter:description', content: 'Contact Us at DOERS. Interested in volunteering with us, collaborate with us, or just wanted to reach out? Send us a message through any of our social links, phone number or email.' },
+   
+
   ]
 })
 </script>
