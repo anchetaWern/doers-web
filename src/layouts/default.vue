@@ -10,7 +10,23 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "DOERs",
-        "url": "https://doers-web.vercel.app"
+        "url": "https://doers-web.vercel.app",
+
+        "logo": "https://doers-web.vercel.app/images/doers-full-logo.png",
+        "sameAs": [
+          "https://www.facebook.com/DOERsInAction",
+          "https://www.threads.com/@doerslaunion",
+          "https://www.tiktok.com/@doerslaunion"
+        ],
+
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "doerslaunion2023@gmail.com",
+          "telephone": "+63 920 659 9877"
+        }]
+
+
       })
     }
   ]
