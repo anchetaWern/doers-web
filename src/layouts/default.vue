@@ -1,6 +1,20 @@
 <script setup>
 import { Analytics } from '@vercel/analytics/nuxt'
 import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DOERs",
+        "url": "https://doers-web.vercel.app"
+      })
+    }
+  ]
+})
 </script>
 
 <template>
