@@ -166,7 +166,8 @@
                     ]">
                       <v-list-item-content>
                         <v-list-item-title class="text-wrap">
-                          {{ item.title }}
+                          <strong class="text-h6 font-weight-bold">{{ item.value }}</strong>  
+                          <div>{{ item.title }}</div>
                         </v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
@@ -221,7 +222,7 @@
                       <v-list-item-content>
                         
                         <v-list-item-title class="text-wrap">
-                         <div style="display:inline-block; width: 50px; text-align: right;"><strong class="text-h5 font-weight-bold">{{ item.value }}</strong></div> {{ item.title }}
+                         <div style="display:inline-block; width: 50px; text-align: right;"><strong class="text-h6 font-weight-bold">{{ item.value }}</strong></div> {{ item.title }}
                         </v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
@@ -349,33 +350,48 @@ const core_values = [
 ];
 
 const awards = [
+ 
   {
-    title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award).'
+    title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024.',
+    value: 'September 2024'
+  },
+
+  {
+    title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024.',
+    value: 'September 2024',
+  },
+
+  {
+    title: 'Recognized as the Lifetime Service partner and Hall of Fame for 2022-2023 by the Innerwheel Club of San Fernando, La Union District 379.',
+    value: 'June 2024'
+  },
+  
+  {
+    title: 'Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy).',
+    value: 'February 2024'
+  },
+
+   {
+    title: 'Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union.',
+    value: 'January 2024'
+  },
+
+  {
+    title: 'Featured on the Hello Surftown’s third issue as the DOERs of Good.',
+    value: 'December 2023'
   },
   {
-    title: 'Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award).'
+    title: 'Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award).',
+    value: 'June 2023'
   },
   {
-    title: 'Recognized as the Lifetime Service partner and Hall of Fame for 2022-2023 by the Innerwheel Club of San Fernando, La Union District 379.'
+    title: 'Have numerous features by the City Government of San Fernando, La Union focusing on the activities done by the group to promote a healthier and cleaner ocean.',
+    value: 'May 2023'
   },
   {
-    title: 'Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy).'
+    title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award).',
+    value: 'March 2023'
   },
-  {
-    title: 'Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union.'
-  },
-  {
-    title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024.'
-  },
-  {
-    title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024.'
-  },
-  {
-    title: 'Featured on the Hello Surftown’s third issue as the DOERs of Good.'
-  },
-  {
-    title: 'Have numerous features by the City Government of San Fernando, La Union focusing on the activities done by the group to promote a healthier and cleaner ocean.'
-  }
 ];
 
 const accomplishments = [
