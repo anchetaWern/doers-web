@@ -14,7 +14,11 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxt/icon'],
+  modules: ['@nuxt/icon', 'nuxt-simple-sitemap'],
+
+  sitemap: {
+    siteUrl: 'https://doers-web.vercel.app',
+  },
 
   vuetify: {
     // Add this
