@@ -9,8 +9,8 @@
         </v-row>
 
         <v-row>
-          <v-col cols="12" md="6" class="text-red">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores. sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vita</p>
+          <v-col cols="12" md="6">
+            <p>We’d love to hear from you! Whether you want to volunteer, partner with us, or simply learn more about our work, our doors are always open. Reach out to us and let’s work together to create cleaner shores, greener spaces, and stronger communities.</p>
           </v-col>
         </v-row>
 

@@ -117,7 +117,7 @@
             <v-col cols="12">
               <h1 class="text-h3 font-weight-bold mt-5">What we do</h1>
         
-              <p class="mt-5 mb-5 text-red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin porttitor massa, non cursus dui finibus vel. Cras ac ex justo. Donec sed vehicula est. Donec non diam pulvinar, rhoncus turpis at, finibus augue. Donec mauris ligula, ultricies gravida varius at, vulputate vel ipsum. Duis eros sapien, pharetra in convallis vitae, malesuada id neque. Phasellus rutrum viverra velit id commodo. Nulla id arcu in enim consequat efficitur. In nec tellus nec lorem interdum scelerisque id ac metus.</p>
+              <p class="mt-5 mb-5">We turn compassion into action. Through beach clean-ups, sea turtle nesting and patrol, blood donations, tree planting, and other volunteer efforts, we care for people, communities, and the environment. Guided by the spirit of volunteerism, we believe small acts—done together—can create a cleaner, greener, and more compassionate world.</p>
             </v-col>
           </v-row>
 
@@ -144,8 +144,8 @@
                 <h2 class="text-h3 font-weight-bold">
                   Awards and Features
                 </h2>
-                <div class="mt-5 text-red">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                <div class="mt-5">
+                  Every recognition we receive is a reflection of the kindness, hard work, and dedication of our volunteers and partners. These awards are not just ours—they belong to everyone who has joined us in cleaning beaches, planting trees, donating blood, supporting schools, and serving communities. Each honor is a reminder that together, we can create change worth celebrating.
                 </div>
                 
               </v-responsive>
@@ -198,8 +198,8 @@
                 <h2 class="text-h3 font-weight-bold">
                   Achievements in 2024
                 </h2>
-                <div class="mt-5 text-red">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                <div class="mt-5">
+                 Our achievements are more than numbers—they are stories of people coming together to make a difference. From leading daily beach clean-ups and planting trees, to joining Brigada Eskwela, blood donation drives, and community projects, each activity reflects the power of volunteerism in action. Every milestone we reach is proof that when we unite for a common purpose, we can build cleaner shores, greener spaces, healthier communities, and a brighter future for all.
                 </div>
                 
               </v-responsive>
@@ -250,8 +250,8 @@
                 <h2 class="text-h3 font-weight-bold">
                   Org Chart
                 </h2>
-                <div class="mt-5 text-red">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+                <div class="mt-5">
+                  Behind every project and activity is a team of passionate individuals working together with one vision—to serve communities and protect the environment. Our organizational chart shows how we are united by roles, but driven by the same purpose: creating positive change through volunteerism and collective effort.
                 </div>
                 
               </v-responsive>
@@ -410,7 +410,7 @@ const what_we_do = [
   },
   {
     image: '/images/about/turtle-releasing.jpg',
-    title: 'Turtle nesting and patrol',
+    title: 'Sea turtle nesting and patrol',
     description: 'We also conduct beach patrolling for turtles at night to check if there are turtles establishing a nest and ensuring the safety of the hatchlings for their upcoming new journey in life.',
   
   },

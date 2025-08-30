@@ -5,10 +5,8 @@
         <v-row justify="space-between">
           <v-col cols="12">
             <h1 class="text-h3 mt-5 font-weight-bold">How You Can Help</h1>
-            <div class="text-red">Note: maybe we need a separate google form for donations and partners.</div> 
-            <p class="mt-5 mb-5 text-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
-            perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, 
-            voluptatum culpa velit eligendi quidem?</p>
+      
+            <p class="mt-5 mb-5">Everyone has the power to make a difference. You can join our clean-ups, plant trees, donate blood, or volunteer your time in community projects. Even the smallest act of kindness—sharing our mission, lending a hand, or inspiring others—creates ripples of positive change. Together, we can build a cleaner, greener, and more caring world.</p>
           </v-col>
         </v-row>
       </v-container>
@@ -30,13 +28,14 @@
     <section>
     
       <v-container>
-        <v-divider class="my-12" />
+        <v-divider class="my-6" />
       </v-container>
 
       <v-container>
         <v-row>
           <v-col cols="12" md="auto">
             <h4 class="text-h4 font-weight-medium">Event Calendar</h4>
+            <p class="mt-3">These are all our events for the month. You can message us on our <a href="https://www.facebook.com/DOERsInAction/events" target="_blank">Facebook page</a> for more details.</p>
           </v-col>
         </v-row>
 
@@ -55,7 +54,7 @@
     
     <section>
       <v-container>
-        <v-divider class="my-12" />
+        <v-divider class="my-6" />
       </v-container>
 
       <v-container>
@@ -65,7 +64,7 @@
               <h2 class="text-h4 font-weight-bold">
                 Daily Cleanup Locations
               </h2>
-              <span class="text-red">not sure ung sa squareville kung may daily tayo doon</span>
+              <p class="mt-3">Feel free to participate in our daily beach clean ups.</p>
               
             </v-responsive>
           </v-col>
@@ -121,28 +120,28 @@ const items = [
   {
     image: '/images/get-involved/volunteer.jpg',
     title: 'Volunteer with Us',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?',
+    description: 'Lend your time and energy to our clean-ups, tree planting, and community projects. Together, we can make a real difference.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSeuu7zi5QiPs7Cytt5fEeO9xAHnpNsQMvcT-qlgfPl3-OK1cg/viewform',
     link_text: 'Volunteer',
   },
   {
     image: '/images/get-involved/donate.jpg',
     title: 'Send a Donation',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?',
+    description: 'As a non-profit, we rely on your generosity. Every donation—cash or in kind—supports our mission to protect the environment and uplift communities.',
     link: '#',
     link_text: 'Donate',
   },
   {
     image: '/images/get-involved/collaborate.jpg',
     title: 'Collaborate with Us',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?',
+    description: 'Partner with us in creating sustainable programs and community-driven initiatives. Let’s build impact side by side.',
     link: '#',
     link_text: 'Collaborate',
   },
   {
     image: '/images/get-involved/buy-doers-merch.jpg',
     title: 'Buy DOERs Merch',
-    description: '100% of the proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities. Hic odio officia maiores, perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?',
+    description: 'Support our cause by purchasing our merchandise. Every item helps fund our projects and spreads our message.',
     link: '/merch',
     link_text: 'Shop',
   },

@@ -21,11 +21,10 @@
                 Become a DOER!
               </h3>
 
-              <div class="mt-4 mb-2 text-white">
+              <div class="mt-4 mb-5 text-white">
                 Join us in our daily efforts to protect the environment & support our community through coastal cleanups, tree planting, medical missions, and more meaningful initiatives.
               </div>
-              <div class="text-red">Note: need higher quality version of the background image</div>
-
+             
               <v-btn color="#FDBD13" block href="https://forms.gle/jh4Es4TMAhEV2YB59" target="_blank">
               Support Us
               </v-btn>
@@ -66,22 +65,18 @@
       <OurImpact />
     </v-sheet>
 
-    <v-sheet class="py-8">
+    <v-sheet class="py-6">
       <section>
         <v-container>
           <v-row>
             <v-col cols="12" md="auto">
               <h2 class="text-h3 font-weight-bold">Join Our Efforts</h2>
-              <div class="text-red">What other activities do we need to highlight here?</div>
             </v-col>
           </v-row>
 
           <v-row align="center">
-            <v-col cols="12" md="3" class="text-red">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, 
-              modi quasi recusandae sapiente temporibus vitae. Hic odio officia maiores, 
-              perspiciatis praesentium, obcaecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
-              caecati tenetur aliquam ea, voluptatum culpa velit eligendi quidem?
+            <v-col cols="12" md="3">
+              Be part of something bigger. From daily beach clean-ups and Brigada Eskwela to blood donations, tree planting, and other volunteer programs—we’re creating change together. Join us today and make a difference in our community and environment.
               <div>
                 <v-btn class="mt-3" size="large" color="#26A9E0" to="/get-involved">
                 Get Involved
@@ -132,18 +127,18 @@
         </v-container>
 
         <v-container>
-          <v-divider class="my-3" />
+          <v-divider />
         </v-container>
 
       </section>
     </v-sheet>
 
-    <v-sheet class="py-8">
+    <v-sheet>
       <section>
         <v-container>
           <v-row justify="center">
             <v-col cols="12" md="auto">
-              <h2 class="text-h3 font-weight-bold text-center">Leaderboards</h2>
+              <h2 class="text-h3 font-weight-bold text-center mb-5">Leaderboards</h2>
             </v-col>
           </v-row>
 

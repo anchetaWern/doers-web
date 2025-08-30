@@ -64,25 +64,25 @@ const items = [
   {
     image: '/images/merch/doers-keychain.jpg',
     title: 'Pawikan Keychain',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae.',
+    description: 'Carry a symbol of marine life protection wherever you go. A small reminder of the difference you make.',
    
   },
   {
     image: '/images/merch/doers-shirt.jpg',
     title: 'DOERs Shirt',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae.',
+    description: 'Wear your advocacy proudly! Every shirt supports our projects and spreads the spirit of volunteerism.',
     
   },
   {
     image: '/images/merch/doers-umbrella.jpg',
     title: 'DOERs Payong',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae.',
+    description: 'Stay shaded or dry while showing your support. Practical, purposeful, and for a cause.',
     
   },
   {
     image: '/images/merch/doers-seabon.jpg',
     title: 'Seabon',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi quasi recusandae sapiente temporibus vitae.',
+    description: 'Eco-friendly and refreshing, this seaweed soap is good for you and gentle on the planet.',
    
   },
 ];

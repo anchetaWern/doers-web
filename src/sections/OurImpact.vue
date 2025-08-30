@@ -5,7 +5,6 @@
             <v-row justify="center">
             <v-col cols="12" md="auto">
                 <h2 class="text-h3 font-weight-bold text-center">Our Impact</h2>
-                <div class="text-red">What other stats do we need to highlight here?</div>
                 <h3 class="text-h5 text-center">Since 2020</h3>
             </v-col>
             </v-row>
