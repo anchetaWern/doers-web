@@ -1,11 +1,13 @@
 <script setup>
 import { Analytics } from '@vercel/analytics/nuxt'
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 </script>
 
 <template>
   
   <v-app>
     <Analytics mode="production" />
+    <SpeedInsights />
     <v-app-bar>
       <v-container class="d-flex align-center py-0">
         <v-app-bar-title class="pl-0">
