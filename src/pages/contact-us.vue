@@ -107,7 +107,7 @@ useHead({
     { property: 'og:description', content: 'Contact Us at DOERS. Interested in volunteering with us, collaborate with us, or just wanted to reach out? Send us a message through any of our social links, phone number or email.' },
  
     { property: 'og:url', content: 'https://doers-web.vercel.app/contact-us' },
-    { property: 'og:type', content: 'website' },
+    { property: 'og:type', content: 'article' },
 
     // Twitter Card
     { name: 'twitter:title', content: 'Contact Us - DOERs' },

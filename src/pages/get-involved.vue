@@ -104,15 +104,15 @@ useHead({
     // Open Graph (Facebook, LinkedIn, etc.)
     { property: 'og:title', content: 'How You Can Help - DOERs' },
     { property: 'og:description', content: 'You can help us at DOERS by volunteering with us, sending us a donation, or becoming our partner.' },
-    { property: 'og:image', content: 'https://doers-web.vercel.app/images/get-involved/volunteer.jpg' }, // full URL required
+    { property: 'og:image', content: 'https://doers-web.vercel.app/images/meta/get-involved.jpg' }, // full URL required
     { property: 'og:url', content: 'https://doers-web.vercel.app/get-involved' },
-    { property: 'og:type', content: 'website' },
+    { property: 'og:type', content: 'article' },
 
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'How You Can Help - DOERs' },
     { name: 'twitter:description', content: 'You can help us at DOERS by volunteering with us, sending us a donation, or becoming our partner.' },
-    { name: 'twitter:image', content: 'https://doers-web.vercel.app/images/get-involved/volunteer.jpg' }
+    { name: 'twitter:image', content: 'https://doers-web.vercel.app/images/meta/get-involved.jpg' }
 
   ]
 })

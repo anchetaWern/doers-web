@@ -288,15 +288,15 @@ useHead({
     // Open Graph (Facebook, LinkedIn, etc.)
     { property: 'og:title', content: 'About Us - DOERs' },
     { property: 'og:description', content: 'About Us at DOERS. We are dedicated to protecting the environment and uplifting the community through daily coastal cleanups, tree planting and care, and volunteer-driven initiatives..' },
-    { property: 'og:image', content: 'https://doers-web.vercel.app/images/about/trash-hunt.jpg' }, // full URL required
+    { property: 'og:image', content: 'https://doers-web.vercel.app/images/meta/about-us.jpg' }, // full URL required
     { property: 'og:url', content: 'https://doers-web.vercel.app/about-us' },
-    { property: 'og:type', content: 'website' },
+    { property: 'og:type', content: 'article' },
 
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'About Us - DOERs' },
     { name: 'twitter:description', content: 'About Us at DOERS. We are dedicated to protecting the environment and uplifting the community through daily coastal cleanups, tree planting and care, and volunteer-driven initiatives..' },
-    { name: 'twitter:image', content: 'https://doers-web.vercel.app/images/about/trash-hunt.jpg' }
+    { name: 'twitter:image', content: 'https://doers-web.vercel.app/images/meta/about-us.jpg' }
 
   ]
 
