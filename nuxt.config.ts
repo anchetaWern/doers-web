@@ -14,10 +14,20 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxt/icon', 'nuxt-simple-sitemap'],
+  modules: ['@nuxt/icon', 'nuxt-simple-sitemap', 'nuxt-simple-robots'],
 
   sitemap: {
     siteUrl: 'https://doers-web.vercel.app',
+  },
+
+  robots: {
+    rules: {
+      UserAgent: '*',
+      Allow: '/'   // allow all pages
+    },
+    sitemap: [
+      'https://doers-web.vercel.app/sitemap.xml'
+    ]
   },
 
   vuetify: {
