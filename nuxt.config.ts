@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   nitro: {
-    preset: 'vercel-static',
+    preset: 'vercel', // vercel | vercel-static
     prerender: {
       crawlLinks: true, 
       routes: ['/'],  
