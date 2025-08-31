@@ -196,7 +196,8 @@ useHead({
 
 })
 
-
+/*
+// works!!
 onMounted(async () => {
   try {
     const res = await fetch('/api/volunteers');
@@ -206,6 +207,7 @@ onMounted(async () => {
     console.error('Error fetching volunteers:', err);
   }
 });
+*/
 
 
 const leaders = [
