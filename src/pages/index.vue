@@ -167,8 +167,10 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
 import Leaderboard from '@/components/Leaderboard';
 import OurImpact from '@/sections/OurImpact';
+
 
 useHead({
   title: 'DOERs | Dalumpinas Oeste Eco Rangers',
@@ -193,6 +195,13 @@ useHead({
   ]
 
 })
+
+onMounted(async () => {
+  const res = await fetch('/api/volunteers');
+  const data = await res.json();
+  console.log('volunteers: ', data);
+});
+
 
 const leaders = [
   {
