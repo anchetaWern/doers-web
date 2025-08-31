@@ -196,13 +196,17 @@ useHead({
 
 })
 
-/*
+
 onMounted(async () => {
-  const res = await fetch('/api/volunteers');
-  const data = await res.json();
-  console.log('volunteers: ', data);
+  try {
+    const res = await fetch('/api/volunteers');
+    const data = await res.json();
+    console.log('volunteerz:', data);
+  } catch (err) {
+    console.error('Error fetching volunteers:', err);
+  }
 });
-*/
+
 
 const leaders = [
   {

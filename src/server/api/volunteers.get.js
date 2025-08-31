@@ -1,13 +1,10 @@
-import { Client } from '@neondatabase/serverless';
+// works!
+import { neon } from '@neondatabase/serverless';
 
 export default defineEventHandler(async () => {
-  const client = new Client({
-    connectionString: process.env.DATABASE_URL
-  });
-  await client.connect();
+  const sql = neon(process.env.DATABASE_URL);
 
-  const result = await client.query('SELECT name FROM volunteers');
+  const result = await sql`SELECT name FROM volunteers`;
 
-  await client.end();
-  return result.rows;
+  return result;
 });
