@@ -15,6 +15,7 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/font": "^7.4.47",
     "@mdi/js": "^7.4.47",
+    "@neondatabase/serverless": "^0.10.4",
     "@nuxt/icon": "^1.13.0",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
