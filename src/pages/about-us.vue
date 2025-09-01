@@ -292,7 +292,6 @@
 
 <script setup>
 import OrgChart from '@/components/OrgChart';
-import VideoEmbed from '@/components/VideoEmbed';
 
 useHead({
   title: 'About Us - DOERs',
