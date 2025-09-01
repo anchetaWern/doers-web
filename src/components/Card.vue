@@ -7,7 +7,7 @@
       :position="$vuetify.display.smAndDown ? 'top center' : 'center'"
     ></v-img>
 
-    <v-card-title class="font-weight-medium">
+    <v-card-title class="font-weight-bold">
       {{ item.title }}
     </v-card-title>
 

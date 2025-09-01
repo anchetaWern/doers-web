@@ -159,22 +159,34 @@
               <v-card
                 class="mx-auto"
               >
-                <v-list>
+                <v-expansion-panels>
                   <template v-for="(item, index) in awards" :key="index">
-                    <v-list-item :min-height="60" :class="[
-                      $vuetify.display.smAndDown ? 'py-4' : 'py-2'
-                    ]">
-                      <v-list-item-content>
-                        <v-list-item-title class="text-wrap">
-                          <strong class="text-h6 font-weight-bold">{{ item.value }}</strong>  
+                    <v-expansion-panel>
+                      <v-expansion-panel-title>
+                        <div class="d-flex flex-column">
+                          <strong class="text-h6 font-weight-bold">{{ item.value }}</strong>
                           <div>{{ item.title }}</div>
-                        </v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
+                        </div>
+                      </v-expansion-panel-title>
 
-                    <v-divider v-if="index < awards.length - 1" />
+                      <v-expansion-panel-text>
+                        <!-- Expanded content goes here -->
+
+                        <v-carousel v-if="item.images">
+                          <v-carousel-item
+                            v-for="(img, i) in item.images"
+                            :key="i"
+                            :src="img.image"
+                            contain
+                          ></v-carousel-item>
+                        </v-carousel>
+
+
+                      </v-expansion-panel-text>
+                    
+                    </v-expansion-panel>
                   </template>
-                </v-list>
+                </v-expansion-panels>
 
               </v-card>
 
@@ -204,7 +216,10 @@
                 </div>
                 
               </v-responsive>
+
             </v-col>
+
+            
 
           </v-row>
 
@@ -277,6 +292,7 @@
 
 <script setup>
 import OrgChart from '@/components/OrgChart';
+import VideoEmbed from '@/components/VideoEmbed';
 
 useHead({
   title: 'About Us - DOERs',
@@ -353,44 +369,108 @@ const awards = [
  
   {
     title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024.',
-    value: 'September 2024'
+    value: 'September 2024',
+    images: null
   },
 
   {
     title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024.',
     value: 'September 2024',
+    images: null,
   },
 
   {
     title: 'Recognized as the Lifetime Service partner and Hall of Fame for 2022-2023 by the Innerwheel Club of San Fernando, La Union District 379.',
-    value: 'June 2024'
+    value: 'June 2024',
+    images: [
+      {
+        image: '/images/features/inner-wheel-partner/certificate-of-appreciation.jpg',
+      },
+      {
+        image: '/images/features/inner-wheel-partner/certificate-of-recognition.jpg',
+      },
+      {
+        image: '/images/features/inner-wheel-partner/inner-wheel-plaque.jpg',
+      },
+      {
+        image: '/images/features/inner-wheel-partner/inner-wheel-award.jpg',
+      }
+    ],
   },
   
   {
     title: 'Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy).',
-    value: 'February 2024'
+    value: 'February 2024',
+    images: [
+      {
+        image: '/images/features/base-development-partner/base-development-plaque.jpg'
+      },
+      {
+        image: '/images/features/base-development-partner/base-development-award.jpg'
+      }
+    ],
   },
 
    {
     title: 'Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union.',
-    value: 'January 2024'
+    value: 'January 2024',
+    images: [
+      {
+        image: '/images/features/northstar/north-star.jpg'
+      },
+      {
+        image: '/images/features/northstar/north-star-inside.jpg'
+      },
+      {
+        image: '/images/features/northstar/north-star-doers.jpg'
+      },
+      {
+        image: '/images/features/northstar/north-star-people.jpg'
+      },
+    ]
   },
 
   {
     title: 'Featured on the Hello Surftown’s third issue as the DOERs of Good.',
-    value: 'December 2023'
+    value: 'December 2023',
+    images: [
+      {
+        image: '/images/features/hello-surftown/hello-surftown-cover.jpg'
+      },
+      {
+        image: '/images/features/hello-surftown/hello-surftown-doers.jpg'
+      },
+      {
+        image: '/images/features/hello-surftown/hello-surftown-doers2.jpg'
+      },
+    ],
   },
   {
     title: 'Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award).',
-    value: 'June 2023'
+    value: 'June 2023',
+    images: [
+      {
+        image: '/images/features/kapakanan/kapakanan-award-plaque.jpg'
+      },
+      {
+        image: '/images/features/kapakanan/kapakanan-award.jpg'
+      },
+    ],
   },
   {
     title: 'Have numerous features by the City Government of San Fernando, La Union focusing on the activities done by the group to promote a healthier and cleaner ocean.',
-    value: 'May 2023'
+    value: 'May 2023',
+    images: [
+      {
+        image: '/images/features/city-govt/doers-feature.png',
+        type: 'contain',
+      }
+    ],
   },
   {
     title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award).',
-    value: 'March 2023'
+    value: 'March 2023',
+    images: null,
   },
 ];
 
@@ -415,7 +495,7 @@ const what_we_do = [
   {
     image: '/images/about/trash-hunt.jpg',
     title: 'Trash hunts & plogging',
-    description: 'Our cleanup drive span coastal areas to highways, emphasizing the importance of cleanliness. We aim to educate individuals and organizations on the significance of maintaining cleanliness in every environment, regardless of the scale of the effort involved.',
+    description: 'Our cleanup drive spans from coastal areas to highways, highlighting the importance of cleanliness. We strive to educate individuals and organizations on maintaining clean environments, no matter the scale of effort required.',
 
   },
   {
@@ -437,4 +517,5 @@ const what_we_do = [
    
   },
 ];
+
 </script>
