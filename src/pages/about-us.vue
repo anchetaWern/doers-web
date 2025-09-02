@@ -369,13 +369,25 @@ const awards = [
   {
     title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024.',
     value: 'September 2024',
-    images: null
+    images: [
+      {
+        image: '/images/features/oceanic-society/oceanic-society-feature.jpg'
+      }
+    ]
   },
 
   {
     title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024.',
     value: 'September 2024',
-    images: null,
+    images: [
+      {
+        image: '/images/features/pia-launion/pia-launion-hatchling-release-feature.jpg'
+      },
+      {
+        image: '/images/features/pia-launion/pia-launion-pawikan-mural.jpg'
+      }
+    ],
+   
   },
 
   {
@@ -461,15 +473,18 @@ const awards = [
     value: 'May 2023',
     images: [
       {
-        image: '/images/features/city-govt/doers-feature.png',
-        type: 'contain',
+        image: '/images/features/city-govt/doers-feature.jpg',
       }
     ],
   },
   {
     title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award).',
     value: 'March 2023',
-    images: null,
+    images: [
+      {
+        image: '/images/features/city-govt-rabii-ti-pammadayaw/pammadayaw.jpg'
+      }
+    ],
   },
 ];
 
