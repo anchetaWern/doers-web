@@ -101,7 +101,7 @@
                             :src="card.src"
                             :alt="card.title"
                             class="w-full h-full object-cover"
-                            style="object-fit: cover; object-position: center; height: 200px; width: 100%;"
+                            style="object-fit: cover; object-position: top center; height: 200px; width: 100%;"
                           />
                         
                           <div
@@ -273,8 +273,8 @@ const cards = [
     src: '/images/home/mangrove.jpg'
   },
   {
-    title: 'Speaking Engagements',
-    src: '/images/home/radio-guestings.jpg'
+    title: 'Turtle Patrol & Releasing',
+    src: '/images/about/turtle-releasing.jpg'
   }
 ];
 </script>
