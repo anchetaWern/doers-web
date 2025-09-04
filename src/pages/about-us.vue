@@ -170,17 +170,25 @@
                       </v-expansion-panel-title>
 
                       <v-expansion-panel-text>
-                        <!-- Expanded content goes here -->
+                        
+                        <div class="image-wrapper">
+                          <v-carousel
+                            v-if="item.images && item.images.length > 1"
+                          >
+                            <v-carousel-item
+                              v-for="(img, i) in item.images"
+                              :key="i"
+                              :src="img.image"
+                              contain
+                            />
+                          </v-carousel>
 
-                        <v-carousel v-if="item.images">
-                          <v-carousel-item
-                            v-for="(img, i) in item.images"
-                            :key="i"
-                            :src="img.image"
+                          <v-img
+                            v-else-if="item.images && item.images.length === 1"
+                            :src="item.images[0].image"
                             contain
-                          ></v-carousel-item>
-                        </v-carousel>
-
+                          />
+                        </div>
 
                       </v-expansion-panel-text>
                     
@@ -289,6 +297,13 @@
     
 
 </template>
+
+<style scoped>
+.image-wrapper {
+  max-width: 500px;
+  margin: 0 auto; 
+}
+</style>
 
 <script setup>
 import OrgChart from '@/components/OrgChart';
