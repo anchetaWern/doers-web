@@ -525,7 +525,7 @@ const what_we_do = [
   
   },
   {
-    image: '/images/about/blood-donation.jpg',
+    image: '/images/about/volunteer-activities.jpg',
     title: 'Volunteer Activities',
     description: 'The organization delves not only on environmental matters but also links with other organizations which are into other aspects like health, feeding programs, blood letting, medical missions, awareness campaigns.',
    
