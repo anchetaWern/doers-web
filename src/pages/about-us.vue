@@ -172,6 +172,12 @@
                       <v-expansion-panel-text>
                         
                         <div class="image-wrapper">
+                          <div class="text-center mb-3" v-if="item.url">
+                            <v-btn size="small" :href="item.url" target="_blank">
+                              View Post
+                            </v-btn>
+                          </div>
+
                           <v-carousel
                             v-if="item.images && item.images.length > 1"
                           >
@@ -384,6 +390,7 @@ const awards = [
   {
     title: 'Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024.',
     value: 'September 2024',
+    url: 'https://www.facebook.com/OceanicSociety/posts/pfbid034Sq3bvkD8KGdm8eoAxkPPA3m2yKUuKB7cdzGdrLRNXugxzprZFYooWPnhvnfvT5l',
     images: [
       {
         image: '/images/features/oceanic-society/oceanic-society-feature.jpg'
@@ -394,6 +401,7 @@ const awards = [
   {
     title: 'Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024.',
     value: 'September 2024',
+    url: 'https://www.facebook.com/pia1launion/posts/pfbid02gFTHMGoF1Kz1sxsfFtgBCN6wHux9Ah8V7WDK3CD13A41Ve73SRF44aVAWHrf1xXil',
     images: [
       {
         image: '/images/features/pia-launion/pia-launion-hatchling-release-feature.jpg'
@@ -427,6 +435,7 @@ const awards = [
   {
     title: 'Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy).',
     value: 'February 2024',
+    url: 'https://www.facebook.com/DOERsInAction/posts/pfbid02rRqsMfFmvxPpT2dAn2xsLraxh3vARr6wxv1CLU8RfuN81zuLDfDEBiGAB1cVBNnkl',
     images: [
       {
         image: '/images/features/base-development-partner/base-development-plaque.jpg'
@@ -440,6 +449,7 @@ const awards = [
    {
     title: 'Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union.',
     value: 'January 2024',
+    url: 'https://www.facebook.com/100075528894369/posts/411490884711871/?rdid=wkVQzxS0Px4vcbgK#',
     images: [
       {
         image: '/images/features/northstar/north-star.jpg'
@@ -459,6 +469,7 @@ const awards = [
   {
     title: 'Featured on the Hello Surftown’s third issue as the DOERs of Good.',
     value: 'December 2023',
+    url: 'https://www.facebook.com/100075528894369/posts/651141067413517/?rdid=aQ5XxDXUNB3HHXuY#',
     images: [
       {
         image: '/images/features/hello-surftown/hello-surftown-cover.jpg'
@@ -474,6 +485,7 @@ const awards = [
   {
     title: 'Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award).',
     value: 'June 2023',
+    url: 'https://www.facebook.com/DOERsInAction/posts/pfbid02gVf6sE3cDURPX2qG4FQ6zUXedkFeKrmbg5RKJS2DiQdqVaWprjtJpJm3BuUKKzjl',
     images: [
       {
         image: '/images/features/kapakanan/kapakanan-award-plaque.jpg'
@@ -486,6 +498,7 @@ const awards = [
   {
     title: 'Have numerous features by the City Government of San Fernando, La Union focusing on the activities done by the group to promote a healthier and cleaner ocean.',
     value: 'May 2023',
+    url: 'https://www.facebook.com/watch/?v=1433216060452939&rdid=zx2cqHqQVqIgMFVc',
     images: [
       {
         image: '/images/features/city-govt/doers-feature.jpg',
@@ -495,6 +508,7 @@ const awards = [
   {
     title: 'Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award).',
     value: 'March 2023',
+    url: 'https://www.facebook.com/story.php?story_fbid=6141084092666857&id=100075528894369&rdid=FCWAFNudeZQGjBOn#',
     images: [
       {
         image: '/images/features/city-govt-rabii-ti-pammadayaw/pammadayaw.jpg'
