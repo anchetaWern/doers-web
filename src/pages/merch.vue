@@ -10,7 +10,7 @@
 
         <v-row>
           <v-col cols="12" md="6">
-            <p>100% of the proceeds from our merch will be used for buying gloves, sacks, pickers, and other materials used for our clean up activities. </p>
+            <p>100% of the proceeds from our merch will be used for purchasing gloves, sacks, pickers, and other materials used for our clean-up activities. </p>
             <v-btn color="#FFA726" class="mt-5" href="https://www.facebook.com/DOERsInAction" target="_blank" variant="elevated">Order via Facebook</v-btn>
           </v-col>
         </v-row>
@@ -63,7 +63,7 @@ useHead({
 const items = [
   {
     image: '/images/merch/doers-keychain.jpg',
-    title: 'Pawikan Keychain',
+    title: 'DOERtle Keychain',
     description: 'Carry a symbol of marine life protection wherever you go. A small reminder of the difference you make.',
    
   },
