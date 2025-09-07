@@ -297,6 +297,36 @@
         </v-container>
       </section>
 
+      <v-container>
+        <v-divider />
+      </v-container>
+
+
+      <section>
+        <v-container>
+          <v-row justify="space-between">
+            <v-col cols="12">
+              <v-responsive>
+                <h2 class="text-h3 font-weight-bold">
+                  Partners
+                </h2>
+                <div class="mt-5">
+                  We are nothing without our partners who work tirelessly with us in our efforts for a cleaner and greener environment.
+                </div>
+                
+              </v-responsive>
+            </v-col>
+
+          </v-row>
+
+          <v-row>
+            <v-col cols="12">
+              <v-avatar v-for="partner in partners" :image="partner.image" size="150" class="mx-2 my-2"></v-avatar>
+            </v-col>
+          </v-row>
+        </v-container>
+      </section>
+
 
     </v-sheet>
 
@@ -559,6 +589,55 @@ const what_we_do = [
     description: 'The organization delves not only on environmental matters but also links with other organizations which are into other aspects like health, feeding programs, blood letting, medical missions, awareness campaigns.',
    
   },
+];
+
+const partners = [
+  {
+    image: '/images/partners/rotary-international.jpg'
+  },
+  {
+    image: '/images/partners/inner-wheel.jpg'
+  },
+  {
+    image: '/images/partners/launion-medical-society.jpg'
+  },
+  {
+    image: '/images/partners/launion-united-lions-club.jpg'
+  },
+
+  {
+    image: '/images/partners/redcross-youth-launion-chapter.jpg'
+  },
+  {
+    image: '/images/partners/link.jpg'
+  },
+
+  {
+    image: '/images/partners/bjmp.jpg'
+  },
+   
+  {
+    image: '/images/partners/580-aircraft-control.jpg'
+  },
+  {
+    image: '/images/partners/585-airbase-group.jpg'
+  },
+  {
+    image: '/images/partners/bfp.jpg'
+  },
+  {
+    image: '/images/partners/coast-guard.jpg'
+  },
+  {
+    image: '/images/partners/phil-navy-naval-command.jpg'
+  },
+  {
+    image: '/images/partners/phil-navy.jpg'
+  },
+  {
+    image: '/images/partners/viewpoint-grill.jpg'
+  },
+  
 ];
 
 </script>
