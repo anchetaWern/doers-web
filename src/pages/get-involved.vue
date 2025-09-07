@@ -149,28 +149,11 @@ const items = [
 
 const events = [ 
   { 
-    title: 'Trash hunt with Philippine Navy | HQ to Lingsat SFC | Aug 19, 5:30am', 
-    start: new Date(2025, 7, 19, 5, 30), 
-    end: new Date(2025, 7, 19, 6, 30), 
+    title: 'Plogging in celebration of world ozone day | BJMP Brgy. Pias, San Fernando La Union | Sept 13, 6:00am', 
+    start: new Date(2025, 8, 13, 6, 0), 
+    end: new Date(2025, 8, 13, 7, 30), 
     color: 'blue', 
   }, 
-  { 
-    title: 'Coastal cleanup | Brgy Cabarsican, Bacnotan LU | Aug 19, 6:00am', 
-    start: new Date(2025, 7, 19, 6, 0), 
-    end: new Date(2025, 7, 19, 7, 0), 
-    color: 'red', 
-  }, 
-  { 
-    title: 'Tree Planting | Luna LU | Aug 24, 6:30am', 
-    start: new Date(2025, 7, 24, 6, 30), 
-    end: new Date(2025, 7, 24, 8, 0), 
-    color: 'red', 
-  }, 
-  { 
-    title: 'Blood letting | Mess Hall, Wallace Air Station, Poro SFC | Aug 29, 8:00am to 12:00pm', 
-    start: new Date(2025, 7, 29, 8, 0), 
-    end: new Date(2025, 7, 29, 12, 0), 
-    color: 'green', 
-  }, 
+
 ]
 </script>
