@@ -1,0 +1,48 @@
+heading:
+  eyebrow: About DOERs
+  title: Who we are
+  description: Dalumpinas Oeste Eco Rangers (DOERs) is a non profit organization dedicated in ensuring the cleanliness of our roads and beaches, protecting sea turtle nests & hatchlings, conducting feeding programs, tree planting & parenting, blood drives and medical missions.
+organizationEyebrow: Our organization
+organizationTitle: DOERS
+organizationImage: '@assets/images/home/sunset-plogging.jpg'
+organizationImageAlt: DOERs taking part in a coastal community activity
+principles:
+  - letter: D
+    text: Dedicated and commitedly conducting regular ridge to reef activities such as coastal cleanup, plogging, tree planting and parenting
+  - letter: O
+    text: Obediently observe laws and practices on Pawikan Conservation
+  - letter: E
+    text: Excellently disseminate and inform community on global environmental challenges and awareness
+  - letter: R
+    text: Responsibly build local and international linkages; and
+  - letter: S
+    text: Sustainably and efficiently develop, manage and assess projects, programs and activities, resources on environmental conservation and protection
+visionMissionEyebrow: Our direction
+visionMissionTitle: Vision and Mission
+vision: The Dalumpinas Oeste Eco Rangers (DOERs) as steward of Mother Earth envisions a sustained green and safe environment and community.
+mission: Conserve and preserve the environment by promoting awareness and building linkages not only in the local but also in the international stage.
+valuesEyebrow: EARTH
+valuesTitle: Core Values
+values:
+  - letter: E
+    text: Excellent
+  - letter: A
+    text: Active and
+  - letter: R
+    text: Responsible organization
+  - letter: T
+    text: Towards a
+  - letter: H
+    text: Harmonious and safe Mother Earth.
+foundingEyebrow: Our beginnings
+foundingTitle: Built by volunteers.
+foundingLead: Our founding team includes
+founders:
+  - name: Miguel Vargas
+    role: Founder
+  - name: Angelyka Siggaoat
+    role: Co-Founder
+chaptersLinkLabel: Meet our chapters →
+recognitionEyebrow: Awards & features
+recognitionTitle: Recognition of a shared effort.
+recognitionIntro: Selected milestones from our existing organizational record. Each recognition reflects the work of volunteers and partners.

@@ -3,7 +3,8 @@
   "include": [
     ".astro/types.d.ts",
     "src/**/*",
-    "astro.config.mjs"
+    "astro.config.mjs",
+    "keystatic.config.ts"
   ],
   "exclude": [
     "dist",
@@ -11,6 +12,10 @@
     "node_modules"
   ],
   "compilerOptions": {
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"]
+    }
   }
 }

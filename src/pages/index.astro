@@ -1,33 +1,35 @@
 ---
 // Phase 1: migrate useful content onto the new foundation. Full homepage in Phase 2.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
 import CTA from '../components/CTA.astro';
 import Photo from '../components/Photo.astro';
 import Section from '../components/Section.astro';
 import Card from '../components/Card.astro';
-import { programs } from '../data/programs';
+const homepageEntry = await getEntry('homepage', 'index');
+const homepage = homepageEntry!.data;
 ---
 <BaseLayout title="DOERs">
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Dalumpinas Oeste Eco Rangers</p>
-        <h1 id="hero-heading">Care for our coasts.<br />Show up for our communities.</h1>
-        <p>Join DOERs in protecting the environment and supporting our communities through coastal cleanups, tree planting, turtle conservation and more.</p>
-        <div class="actions"><CTA href="/activities">Join an Activity</CTA><CTA href="/partners" variant="outline">Partner with DOERs</CTA></div>
-        <p class="hero-note">First-timers welcome. You don’t need to be a member to volunteer.</p>
+        <p class="eyebrow">{homepage.hero.eyebrow}</p>
+        <h1 id="hero-heading">{homepage.hero.headingStart}<br />{homepage.hero.headingEnd}</h1>
+        <p>{homepage.hero.description}</p>
+        <div class="actions"><CTA href={homepage.hero.primaryHref}>{homepage.hero.primaryLabel}</CTA><CTA href={homepage.hero.secondaryHref} variant="outline">{homepage.hero.secondaryLabel}</CTA></div>
+        <p class="hero-note">{homepage.hero.note}</p>
       </div>
-      <figure><Photo src="home/sunrise-cleanup.jpg" alt="DOERs volunteers taking part in a coastal cleanup" eager /><figcaption>Our community, taking care of the coast.</figcaption></figure>
+      <figure><Photo src={homepage.hero.image} alt={homepage.hero.imageAlt} eager /><figcaption>{homepage.hero.caption}</figcaption></figure>
     </div>
   </section>
-  <Section id="who-we-are" title="Small acts, shared responsibility." eyebrow="Who we are" tone="soft">
+  <Section id="who-we-are" title={homepage.introduction.title} eyebrow={homepage.introduction.eyebrow} tone="soft">
     <div class="split">
-      <p>Dalumpinas Oeste Eco Rangers (DOERs) is a nonprofit organization caring for roads and beaches, protecting sea turtle nests and hatchlings, and supporting communities through feeding programs, tree planting, blood drives and medical missions.</p>
-      <div><p>Our main chapter is in La Union, with chapters in Ilocos Norte and Bataan.</p><a class="text-link" href="/about">Get to know DOERs →</a></div>
+      <p>{homepage.introduction.description}</p>
+      <div><p>{homepage.introduction.chapterNote}</p><a class="text-link" href={homepage.introduction.linkHref}>{homepage.introduction.linkLabel}</a></div>
     </div>
   </Section>
   <Section id="our-work" title="Hands-on care for people and the environment." eyebrow="What we do">
-    <div class="grid grid--3">{programs.map(program => <Card title={program.title}>
+    <div class="grid grid--3">{homepage.programs.map(program => <Card title={program.title}>
       <Photo slot="image" src={program.image} alt={program.title} sizes="(min-width: 48rem) 33vw, 100vw" />
       <p>{program.description}</p>
     </Card>)}</div>

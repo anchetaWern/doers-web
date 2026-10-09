@@ -1,25 +1,27 @@
 ---
 // Existing collaboration flow and historical partners migrated for the foundation.
 // Dedicated partner pathways and active rewards follow in Phase 4.
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeading from '../components/PageHeading.astro';
 import Section from '../components/Section.astro';
 import CTA from '../components/CTA.astro';
 import Photo from '../components/Photo.astro';
-import { site } from '../data/site';
 const partners = await getCollection('partners');
+const [siteEntry, partnerPageEntry] = await Promise.all([getEntry('settings', 'index'), getEntry('partnerPage', 'index')]);
+const site = siteEntry!.data;
+const partnerPage = partnerPageEntry!.data;
 ---
 <BaseLayout title="Partner with DOERs" description="Support DOERs environmental and community initiatives. Connect through our existing Google Form to discuss collaboration or in-kind support.">
-  <PageHeading title="Support the people who show up." eyebrow="Partners & sponsors" description="Help us care for our coasts and communities through practical support and shared volunteer efforts." />
+  <PageHeading {...partnerPage.heading} />
   <Section>
     <div class="split">
-      <div class="prose"><h2>Collaborate with DOERs.</h2><p>Our work brings together volunteers and organizations to protect the environment and support our communities. Talk to us about supplies, food or water for an activity, or a community initiative we can work on together.</p><CTA href={site.collaborationForm}>Tell us how you’d like to help (Google Forms)</CTA><p>Prefer to speak to the team first? <a href="/contact">Contact DOERs</a>.</p></div>
-      <Photo src="get-involved/collaborate.jpg" alt="DOERs working together with community partners" />
+      <div class="prose"><h2>{partnerPage.collaborationTitle}</h2><p>{partnerPage.collaborationBody}</p><CTA href={site.collaborationForm}>{partnerPage.formButtonLabel}</CTA><p>{partnerPage.contactLead} <a href="/contact">Contact DOERs</a>.</p></div>
+      <Photo src={partnerPage.image} alt={partnerPage.imageAlt} />
     </div>
   </Section>
-  <Section id="historical-partners" title="Organizations in our story." eyebrow="Past collaborations" tone="soft">
-    <p slot="intro">We are nothing without our partners who work tirelessly with us in our efforts for a cleaner and greener environment.</p>
+  <Section id="historical-partners" title={partnerPage.partnersTitle} eyebrow={partnerPage.partnersEyebrow} tone="soft">
+    <p slot="intro">{partnerPage.partnersIntro}</p>
     <div class="partner-grid">{partners.map(({ data }) => <figure class="partner">
       {data.logo && <div class="partner-mark"><img src={data.logo} alt="" width="112" height="112" loading="lazy" decoding="async" /></div>}
       <figcaption>{data.name}</figcaption>

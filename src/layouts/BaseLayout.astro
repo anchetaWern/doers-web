@@ -1,10 +1,13 @@
 ---
 import '../styles/global.css';
+import { getEntry } from 'astro:content';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
-import { site } from '../data/site';
 interface Props { title: string; description?: string; image?: string; noindex?: boolean; }
-const { title, description = site.description, image = '/images/meta/home.jpg', noindex = false } = Astro.props;
+const siteEntry = await getEntry('settings', 'index');
+const site = siteEntry!.data;
+const { title, image = '/images/meta/home.jpg', noindex = false } = Astro.props;
+const description = Astro.props.description ?? site.description;
 const pageTitle = title === 'DOERs' ? `${title} | ${site.fullName}` : `${title} | DOERs`;
 const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', Astro.site);
 const shareImage = new URL(image, Astro.site);
@@ -45,6 +48,6 @@ const organization = {
     <a class="skip-link" href="#main-content">Skip to content</a>
     <SiteHeader />
     <main id="main-content" tabindex="-1"><slot /></main>
-    <SiteFooter />
+    <SiteFooter site={site} />
   </body>
 </html>

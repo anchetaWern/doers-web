@@ -1,0 +1,45 @@
+hero:
+  eyebrow: Dalumpinas Oeste Eco Rangers
+  headingStart: Care for our coasts.
+  headingEnd: Show up for our communities.
+  description: >-
+    Join DOERs in protecting the environment and supporting our communities
+    through coastal cleanups, tree planting, turtle conservation and more.
+  primaryLabel: Join an Activity
+  primaryHref: /activities
+  secondaryLabel: Partner with DOERs
+  secondaryHref: /partners
+  note: First-timers welcome. You don’t need to be a member to volunteer.
+  image: '@assets/images/hero/image.jpg'
+  imageAlt: DOERs volunteers taking part in a coastal cleanup
+  caption: Our community, taking care of the coast.
+introduction:
+  eyebrow: Who we are
+  title: Small acts, shared responsibility.
+  description: >-
+    Dalumpinas Oeste Eco Rangers (DOERs) is a nonprofit organization caring for
+    roads and beaches, protecting sea turtle nests and hatchlings, and
+    supporting communities through feeding programs, tree planting, blood drives
+    and medical missions.
+  chapterNote: Our main chapter is in La Union, with chapters in Ilocos Norte and Bataan.
+  linkLabel: Get to know DOERs →
+  linkHref: /about
+programs:
+  - title: Coastal Cleanups
+    image: '@assets/images/programs/0/image.jpg'
+    description: Keeping roads and beaches clean through community cleanup efforts.
+  - title: Brigada Eskwela
+    image: '@assets/images/programs/1/image.jpg'
+    description: Supporting schools through volunteer-led activities.
+  - title: Ridge to Reef
+    image: '@assets/images/programs/2/image.jpg'
+    description: Caring for our surroundings from the ridges to the coast.
+  - title: Blood Donation Campaign
+    image: '@assets/images/programs/3/image.jpg'
+    description: Supporting blood donation drives and community health.
+  - title: Tree Planting & Parenting
+    image: '@assets/images/programs/4/image.jpg'
+    description: Planting and caring for trees and mangroves.
+  - title: Turtle Patrol & Releasing
+    image: '@assets/images/programs/5/image.jpg'
+    description: Protecting sea turtle nests and hatchlings.

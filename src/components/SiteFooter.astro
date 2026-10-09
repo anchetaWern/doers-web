@@ -1,5 +1,17 @@
 ---
-import { site, navigation } from '../data/site';
+import { navigation } from '../data/navigation';
+interface Props {
+  site: {
+    fullName: string;
+    address: string;
+    email: string;
+    phone: string;
+    phoneHref: string;
+    facebook: string;
+    socials: { label: string; href: string }[];
+  };
+}
+const { site } = Astro.props;
 ---
 <footer class="site-footer">
   <div class="container footer-grid">

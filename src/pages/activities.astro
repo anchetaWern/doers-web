@@ -1,18 +1,21 @@
 ---
 // Phase 1 migration destination. Collection-driven filtering/cards follow in Phase 3.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
 import PageHeading from '../components/PageHeading.astro';
 import Section from '../components/Section.astro';
 import CTA from '../components/CTA.astro';
-import { site } from '../data/site';
+const [siteEntry, activitiesPageEntry] = await Promise.all([getEntry('settings', 'index'), getEntry('activitiesPage', 'index')]);
+const site = siteEntry!.data;
+const activitiesPage = activitiesPageEntry!.data;
 ---
 <BaseLayout title="Upcoming activities" description="Find DOERs activity announcements and plan your first volunteer experience. Check Facebook for the latest dates and meeting details.">
-  <PageHeading title="Find your next chance to help." eyebrow="Upcoming activities" description="Join one activity. Meet the team. Come back whenever you can." />
+  <PageHeading {...activitiesPage.heading} />
   <Section>
     <div class="notice prose">
-      <h2>Check back for upcoming activities.</h2>
-      <p>No special upcoming activities are listed here right now. Follow DOERs on Facebook for the latest announcements, including cleanup meeting details.</p>
-      <div class="actions"><CTA href={site.facebookEvents}>See Facebook announcements</CTA><CTA href="/volunteer" variant="outline">New to volunteering?</CTA></div>
+      <h2>{activitiesPage.emptyTitle}</h2>
+      <p>{activitiesPage.emptyBody}</p>
+      <div class="actions"><CTA href={site.facebookEvents}>{activitiesPage.facebookButtonLabel}</CTA><CTA href="/volunteer" variant="outline">{activitiesPage.volunteerButtonLabel}</CTA></div>
     </div>
   </Section>
 </BaseLayout>

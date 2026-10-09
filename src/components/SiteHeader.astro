@@ -1,5 +1,5 @@
 ---
-import { navigation } from '../data/site';
+import { navigation } from '../data/navigation';
 import CTA from './CTA.astro';
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isActive = (href: string) => path === href || path.startsWith(`${href}/`);

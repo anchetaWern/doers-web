@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
 import PageHeading from '../components/PageHeading.astro';
 import Section from '../components/Section.astro';
 import CTA from '../components/CTA.astro';
-import { site } from '../data/site';
+const siteEntry = await getEntry('settings', 'index');
+const site = siteEntry!.data;
 ---
 <BaseLayout title="DOERs merch" image="/images/meta/merch.jpg" description="Ask DOERs about merchandise availability and ways to support our cleanup efforts through Facebook.">
   <PageHeading title="Wear your support." eyebrow="DOERs merch" description="Our merchandise helps support the materials used in cleanup activities." />

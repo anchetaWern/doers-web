@@ -1,0 +1,17 @@
+heading:
+  eyebrow: Volunteer with DOERs
+  title: Come once. See what it’s like.
+  description: You don’t have to become a member before volunteering. First-timers are welcome, and you can come on your own.
+startTitle: Start with one activity.
+startBody:
+  - Help with a cleanup, tree planting or a community activity. You don’t need to commit to every event. Join again whenever your schedule allows.
+  - Try a few activities before deciding whether you’d like to become a member.
+activityButtonLabel: Find an activity
+activityButtonHref: /activities
+preparationTitle: Before you head out
+preparationBody: Check the activity announcement on Facebook for the meeting place, time and what to bring. If details such as registration, age requirements or duration aren’t listed, message the team to confirm.
+facebookButtonLabel: Ask DOERs on Facebook
+inquiryLabel: DOERs inquiry form (Google Forms) ↗
+membershipLabel: Interested in membership? Open the Google Form ↗
+image: '@assets/images/get-involved/volunteer.jpg'
+imageAlt: Volunteers participating in a DOERs activity
