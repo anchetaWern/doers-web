@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Section from '../components/Section.astro';
+import CTA from '../components/CTA.astro';
+import { site } from '../data/site';
+---
+<BaseLayout title="DOERs merch" image="/images/meta/merch.jpg" description="Ask DOERs about merchandise availability and ways to support our cleanup efforts through Facebook.">
+  <PageHeading title="Wear your support." eyebrow="DOERs merch" description="Our merchandise helps support the materials used in cleanup activities." />
+  <Section><div class="prose"><p>Message DOERs on Facebook to ask about available merchandise and how to order.</p><CTA href={site.facebook}>Ask about merch on Facebook</CTA><p>Looking for another way to help? <a href="/partners">Explore partnership opportunities</a>.</p></div></Section>
+</BaseLayout>

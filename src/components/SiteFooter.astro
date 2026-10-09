@@ -1,0 +1,26 @@
+---
+import { site, navigation } from '../data/site';
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="/" aria-label="DOERs home"><img src="/images/doers-full-logo.png" width="1013" height="329" alt="DOERs" /></a>
+      <p>{site.fullName}</p>
+      <p class="footer-address">{site.address}</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <h2>Take part</h2>
+      {navigation.map(item => <a href={item.href}>{item.label}</a>)}
+    </nav>
+    <div>
+      <h2>Get in touch</h2>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+      <a href={site.phoneHref}>{site.phone}</a>
+      <a href="/contact">Contact DOERs →</a>
+      <div class="social-links">
+        {site.socials.map(social => <a href={social.href}>{social.label}<span aria-hidden="true"> ↗</span><span class="sr-only"> (external link)</span></a>)}
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom"><p>Small acts. Shared responsibility.</p><a href={site.facebook}>Follow DOERs on Facebook ↗</a></div>
+</footer>

@@ -1,0 +1,8 @@
+---
+interface Props { value: number; label: string; context: string; }
+const { value, label, context } = Astro.props;
+---
+<div class="statistic">
+  <dt>{label}</dt>
+  <dd><strong>{new Intl.NumberFormat('en-PH').format(value)}</strong><span>{context}</span></dd>
+</div>

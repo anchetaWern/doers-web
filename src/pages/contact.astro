@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Section from '../components/Section.astro';
+import CTA from '../components/CTA.astro';
+import { site } from '../data/site';
+---
+<BaseLayout title="Contact us" description="Contact DOERs about volunteering, partnerships or community initiatives. Find our Facebook page, Google Form, email and La Union headquarters.">
+  <PageHeading title="Let’s get you connected." eyebrow="Contact DOERs" description="Interested in volunteering or supporting an activity? Reach out to the team." />
+  <Section><div class="split"><div class="prose"><h2>Talk to DOERs.</h2><p><a href={`mailto:${site.email}`}>{site.email}</a><br /><a href={site.phoneHref}>{site.phone}</a></p><div class="actions"><CTA href={site.facebook}>Message us on Facebook</CTA><CTA href={site.collaborationForm} variant="outline">Inquiry form (Google Forms)</CTA></div><h3>Other social channels</h3><ul>{site.socials.filter(s=>s.label!=='Facebook').map(s=><li><a href={s.href}>{s.label} ↗</a></li>)}</ul></div><div class="prose"><h2>Where to find us</h2><address>DOERs headquarters<br />{site.address}</address><p>Contact the team to confirm a visit or activity meeting point.</p><CTA href={site.mapUrl} variant="outline">Open the HQ location in Google Maps</CTA></div></div></Section>
+</BaseLayout>

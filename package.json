@@ -1,34 +1,25 @@
 {
-  "name": "nuxt-app",
+  "name": "doers-web",
   "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "astro dev",
+    "check": "astro check",
+    "build": "astro build",
+    "generate": "astro build",
+    "preview": "astro preview",
+    "validate": "npm run check && npm run build && node scripts/check-build.mjs"
   },
   "dependencies": {
-    "@fawmi/vue-google-maps": "^0.9.79",
-    "@fullcalendar/core": "^6.1.19",
-    "@jamescoyle/vue-icon": "^0.1.2",
-    "@mdi/font": "^7.4.47",
-    "@mdi/js": "^7.4.47",
-    "@neondatabase/serverless": "^0.10.4",
-    "@nuxt/icon": "^1.13.0",
-    "@vercel/analytics": "^1.5.0",
-    "@vercel/speed-insights": "^1.2.0",
-    "nuxt": "^3.17.3",
-    "nuxt-simple-robots": "^3.1.10",
-    "nuxt-simple-sitemap": "^4.4.1",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.1",
-    "vuetify": "^3.8.5",
-    "webfontloader": "^1.6.28"
+    "astro": "7.3.8",
+    "@astrojs/sitemap": "^3.6.0"
   },
   "devDependencies": {
-    "@nuxt/content": "^3.5.1",
-    "wrangler": "^4.15.2"
+    "@astrojs/check": "^0.9.0",
+    "typescript": "^5.9.0"
   }
 }

@@ -1,0 +1,360 @@
+{
+  "note": "Original repository content, retained for verification. Do not publish legacy numbers, officer roles or leaderboard counts without confirmation.",
+  "about": {
+    "doers_list": [
+      {
+        "title": "Dedicated and commitedly conducting regular ridge to reef activities such as coastal cleanup, plogging, tree planting and parenting",
+        "value": "D"
+      },
+      {
+        "title": "Obediently observe laws and practices on Pawikan Conservation",
+        "value": "O"
+      },
+      {
+        "title": "Excellently disseminate and inform community on global environmental challenges and awareness",
+        "value": "E"
+      },
+      {
+        "title": "Responsibly build local and international linkages; and",
+        "value": "R"
+      },
+      {
+        "title": "Sustainably and efficiently develop, manage and assess projects, programs and activities, resources on environmental conservation and protection",
+        "value": "S"
+      }
+    ],
+    "core_values": [
+      {
+        "title": "Excellent",
+        "value": "E"
+      },
+      {
+        "title": "Active and",
+        "value": "A"
+      },
+      {
+        "title": "Responsible organization",
+        "value": "R"
+      },
+      {
+        "title": "Towards a",
+        "value": "T"
+      },
+      {
+        "title": "Harmonious and safe Mother Earth.",
+        "value": "H"
+      }
+    ],
+    "awards": [
+      {
+        "title": "Together with CURMA and other volunteers, we were featured by the Oceanic Society on their social media accounts for the International Coastal Cleanup day last Sept 2024.",
+        "value": "September 2024",
+        "url": "https://www.facebook.com/OceanicSociety/posts/pfbid034Sq3bvkD8KGdm8eoAxkPPA3m2yKUuKB7cdzGdrLRNXugxzprZFYooWPnhvnfvT5l",
+        "images": [
+          {
+            "image": "/images/features/oceanic-society/oceanic-society-feature.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Twice featured by the PIA La Union for the pawikan hatchling release last January 2024 and the pawikan mural last September 2024.",
+        "value": "September 2024",
+        "url": "https://www.facebook.com/pia1launion/posts/pfbid02gFTHMGoF1Kz1sxsfFtgBCN6wHux9Ah8V7WDK3CD13A41Ve73SRF44aVAWHrf1xXil",
+        "images": [
+          {
+            "image": "/images/features/pia-launion/pia-launion-hatchling-release-feature.jpg"
+          },
+          {
+            "image": "/images/features/pia-launion/pia-launion-pawikan-mural.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Recognized as the Lifetime Service partner and Hall of Fame for 2022-2023 by the Innerwheel Club of San Fernando, La Union District 379.",
+        "value": "June 2024",
+        "images": [
+          {
+            "image": "/images/features/inner-wheel-partner/certificate-of-appreciation.jpg"
+          },
+          {
+            "image": "/images/features/inner-wheel-partner/certificate-of-recognition.jpg"
+          },
+          {
+            "image": "/images/features/inner-wheel-partner/inner-wheel-plaque.jpg"
+          },
+          {
+            "image": "/images/features/inner-wheel-partner/inner-wheel-award.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Recognized as one of the invaluable partner stakeholders of the Air Installation and Base Development Command (Philippine Air Force) and by the Civil Military Operations Unit- Northern Luzon (Philippine Navy).",
+        "value": "February 2024",
+        "url": "https://www.facebook.com/DOERsInAction/posts/pfbid02rRqsMfFmvxPpT2dAn2xsLraxh3vARr6wxv1CLU8RfuN81zuLDfDEBiGAB1cVBNnkl",
+        "images": [
+          {
+            "image": "/images/features/base-development-partner/base-development-plaque.jpg"
+          },
+          {
+            "image": "/images/features/base-development-partner/base-development-award.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Featured by the North Magazine for the January to March 2024 issue with a topic of Uniting Communities for coastal conservation and regeneration in La Union.",
+        "value": "January 2024",
+        "url": "https://www.facebook.com/100075528894369/posts/411490884711871/?rdid=wkVQzxS0Px4vcbgK#",
+        "images": [
+          {
+            "image": "/images/features/northstar/north-star.jpg"
+          },
+          {
+            "image": "/images/features/northstar/north-star-inside.jpg"
+          },
+          {
+            "image": "/images/features/northstar/north-star-doers.jpg"
+          },
+          {
+            "image": "/images/features/northstar/north-star-people.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Featured on the Hello Surftown’s third issue as the DOERs of Good.",
+        "value": "December 2023",
+        "url": "https://www.facebook.com/100075528894369/posts/651141067413517/?rdid=aQ5XxDXUNB3HHXuY#",
+        "images": [
+          {
+            "image": "/images/features/hello-surftown/hello-surftown-cover.jpg"
+          },
+          {
+            "image": "/images/features/hello-surftown/hello-surftown-doers.jpg"
+          },
+          {
+            "image": "/images/features/hello-surftown/hello-surftown-doers2.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Received the Kapakanan “kaagapay sa pag-aalaga ng kalikasan natin” award from Philippine Coastguard (national award).",
+        "value": "June 2023",
+        "url": "https://www.facebook.com/DOERsInAction/posts/pfbid02gVf6sE3cDURPX2qG4FQ6zUXedkFeKrmbg5RKJS2DiQdqVaWprjtJpJm3BuUKKzjl",
+        "images": [
+          {
+            "image": "/images/features/kapakanan/kapakanan-award-plaque.jpg"
+          },
+          {
+            "image": "/images/features/kapakanan/kapakanan-award.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Have numerous features by the City Government of San Fernando, La Union focusing on the activities done by the group to promote a healthier and cleaner ocean.",
+        "value": "May 2023",
+        "url": "https://www.facebook.com/watch/?v=1433216060452939&rdid=zx2cqHqQVqIgMFVc",
+        "images": [
+          {
+            "image": "/images/features/city-govt/doers-feature.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Recipient of the City Service Award last March 2023 with the resolution no. 23-198 (city award).",
+        "value": "March 2023",
+        "url": "https://www.facebook.com/story.php?story_fbid=6141084092666857&id=100075528894369&rdid=FCWAFNudeZQGjBOn#",
+        "images": [
+          {
+            "image": "/images/features/city-govt-rabii-ti-pammadayaw/pammadayaw.jpg"
+          }
+        ]
+      }
+    ],
+    "accomplishments": [
+      {
+        "value": 742,
+        "title": "daily clean-ups (simultaneously at Dalumpinas Oeste, San Francisco and some other parts of La Union)"
+      },
+      {
+        "value": 26,
+        "title": "tree planting activities while 97 days of tree growing and monitoring"
+      },
+      {
+        "value": 13,
+        "title": "plogging activities at San Fernando and San Juan, La Union"
+      },
+      {
+        "value": 7,
+        "title": "turtle releases and 124 days of turtle patrolling"
+      },
+      {
+        "value": 35,
+        "title": "online and face to face speaking engagements"
+      },
+      {
+        "value": 23,
+        "title": "program planning with various environmental groups"
+      },
+      {
+        "value": 26,
+        "title": "bloodletting activities"
+      },
+      {
+        "value": 48,
+        "title": "acudetox and meditation sessions"
+      },
+      {
+        "value": 54,
+        "title": "various activities focused on health (e.g. medical missions, awareness campaigns, health caravans etc.)"
+      },
+      {
+        "value": 15,
+        "title": "fun runs/run with a cause and zumba sessions"
+      },
+      {
+        "value": 12,
+        "title": "gift giving and feeding sessions"
+      },
+      {
+        "value": 9,
+        "title": "various capacity building trainings attended"
+      },
+      {
+        "value": 16,
+        "title": "awards and recognitions received from different organizations"
+      }
+    ],
+    "what_we_do": [
+      {
+        "image": "/images/about/trash-hunt.jpg",
+        "title": "Trash hunts & plogging",
+        "description": "Our cleanup drive spans from coastal areas to highways, highlighting the importance of cleanliness. We strive to educate individuals and organizations on maintaining clean environments, no matter the scale of effort required."
+      },
+      {
+        "image": "/images/about/tree-planting-activity.jpg",
+        "title": "Tree Planting",
+        "description": "One of our goals is to create more natural infrastructures to establish safety in our coastal communities in La Union and other areas via planting more Mangrove Trees."
+      },
+      {
+        "image": "/images/about/turtle-releasing.jpg",
+        "title": "Sea turtle nesting and patrol",
+        "description": "We also conduct beach patrolling for turtles at night to check if there are turtles establishing a nest and ensuring the safety of the hatchlings for their upcoming new journey in life."
+      },
+      {
+        "image": "/images/about/volunteer-activities.jpg",
+        "title": "Volunteer Activities",
+        "description": "The organization delves not only on environmental matters but also links with other organizations which are into other aspects like health, feeding programs, blood letting, medical missions, awareness campaigns."
+      }
+    ],
+    "partners": [
+      {
+        "image": "/images/partners/rotary-international.jpg"
+      },
+      {
+        "image": "/images/partners/inner-wheel.jpg"
+      },
+      {
+        "image": "/images/partners/launion-medical-society.jpg"
+      },
+      {
+        "image": "/images/partners/launion-united-lions-club.jpg"
+      },
+      {
+        "image": "/images/partners/redcross-youth-launion-chapter.jpg"
+      },
+      {
+        "image": "/images/partners/link.jpg"
+      },
+      {
+        "image": "/images/partners/bjmp.jpg"
+      },
+      {
+        "image": "/images/partners/580-aircraft-control.jpg"
+      },
+      {
+        "image": "/images/partners/585-airbase-group.jpg"
+      },
+      {
+        "image": "/images/partners/bfp.jpg"
+      },
+      {
+        "image": "/images/partners/coast-guard.jpg"
+      },
+      {
+        "image": "/images/partners/phil-navy-naval-command.jpg"
+      },
+      {
+        "image": "/images/partners/phil-navy.jpg"
+      },
+      {
+        "image": "/images/partners/viewpoint-grill.jpg"
+      }
+    ]
+  },
+  "home": {
+    "leaders": [
+      {
+        "name": "Ferdz Nones",
+        "activities": 250,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/616/616408.png"
+      },
+      {
+        "name": "Rone Beltran",
+        "activities": 120,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png"
+      },
+      {
+        "name": "Joseph Ferrer",
+        "activities": 70,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/616/616485.png"
+      },
+      {
+        "name": "Chris",
+        "activities": 65,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/616/616426.png"
+      }
+    ],
+    "daily_volunteers": [
+      {
+        "name": "Virginia Espenilla",
+        "activities": 250,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/616/616408.png"
+      },
+      {
+        "name": "Dadzky",
+        "activities": 190,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/616/616432.png"
+      },
+      {
+        "name": "Rogelio Flores Jr.",
+        "activities": 120,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png"
+      }
+    ],
+    "cards": [
+      {
+        "title": "Coastal Cleanups",
+        "src": "/images/home/daily-coastal-cleanup.jpg"
+      },
+      {
+        "title": "Brigada Eskwela",
+        "src": "/images/home/brigada-eskwela.jpg"
+      },
+      {
+        "title": "Ridge to Reef",
+        "src": "/images/home/plogging.jpg"
+      },
+      {
+        "title": "Blood Donation Campaign",
+        "src": "/images/home/medical-mission.jpg"
+      },
+      {
+        "title": "Tree Planting & Parenting",
+        "src": "/images/home/mangrove.jpg"
+      },
+      {
+        "title": "Turtle Patrol & Releasing",
+        "src": "/images/about/turtle-releasing.jpg"
+      }
+    ]
+  }
+}

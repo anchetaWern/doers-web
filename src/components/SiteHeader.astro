@@ -1,0 +1,24 @@
+---
+import { navigation } from '../data/site';
+import CTA from './CTA.astro';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isActive = (href: string) => path === href || path.startsWith(`${href}/`);
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="DOERs home">
+      <img src="/images/doers-full-logo.png" width="1013" height="329" alt="DOERs" />
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      {navigation.map(item => <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>)}
+    </nav>
+    <CTA href="/activities" class="header-cta">Join an Activity</CTA>
+    <details class="mobile-menu">
+      <summary>Menu <span aria-hidden="true">☰</span></summary>
+      <nav aria-label="Mobile navigation">
+        {navigation.map(item => <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>)}
+        <a href="/contact">Contact DOERs</a>
+      </nav>
+    </details>
+  </div>
+</header>

@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeading from '../../components/PageHeading.astro';
+import Section from '../../components/Section.astro';
+import Card from '../../components/Card.astro';
+const chapters = (await getCollection('chapters')).filter(c => c.data.active).sort((a,b) => Number(b.data.type === 'main') - Number(a.data.type === 'main') || a.data.name.localeCompare(b.data.name));
+---
+<BaseLayout title="Our chapters" description="Meet DOERs across La Union, our main chapter, and our chapters in Ilocos Norte and Bataan.">
+  <PageHeading title="DOERs across the Philippines." eyebrow="Our chapters" description="Connected by a shared responsibility for our environment and communities." />
+  <Section><div class="grid grid--3">{chapters.map(chapter => <Card title={chapter.data.name} href={`/chapters/${chapter.id}`}><span class="badge">{chapter.data.type === 'main' ? 'Main chapter' : 'Chapter'}</span><p>{chapter.data.description || `Meet the DOERs chapter in ${chapter.data.province}.`}</p></Card>)}</div></Section>
+</BaseLayout>

@@ -1,0 +1,9 @@
+/about-us /about 301
+/about-us/ /about 301
+/get-involved /volunteer 301
+/get-involved/ /volunteer 301
+/contact-us /contact 301
+/contact-us/ /contact 301
+/blog /about 301
+/blog/ /about 301
+/blog/* /about 301

@@ -1,0 +1,13 @@
+---
+interface Props {
+  href: string;
+  variant?: 'primary' | 'secondary' | 'outline';
+  external?: boolean;
+  class?: string;
+}
+const { href, variant = 'primary', external = /^https?:\/\//.test(href), class: className } = Astro.props;
+---
+<a href={href} class:list={['button', `button--${variant}`, className]}>
+  <slot />
+  {external && <><span aria-hidden="true">↗</span><span class="sr-only"> (external link)</span></>}
+</a>

@@ -1,0 +1,28 @@
+---
+// Full first-activity guide and conversion flow follow in Phase 2.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Section from '../components/Section.astro';
+import Photo from '../components/Photo.astro';
+import CTA from '../components/CTA.astro';
+import { site } from '../data/site';
+---
+<BaseLayout title="Volunteer with us" image="/images/meta/get-involved.jpg" description="Try volunteering with DOERs. First-timers are welcome, membership is not required, and you can join whenever your schedule allows.">
+  <PageHeading title="Come once. See what it’s like." eyebrow="Volunteer with DOERs" description="You don’t have to become a member before volunteering. First-timers are welcome, and you can come on your own." />
+  <Section>
+    <div class="split">
+      <div class="prose">
+        <h2>Start with one activity.</h2>
+        <p>Help with a cleanup, tree planting or a community activity. You don’t need to commit to every event. Join again whenever your schedule allows.</p>
+        <p>Try a few activities before deciding whether you’d like to become a member.</p>
+        <div class="actions"><CTA href="/activities">Find an activity</CTA></div>
+        <h2>Before you head out</h2>
+        <p>Check the activity announcement on Facebook for the meeting place, time and what to bring. If details such as registration, age requirements or duration aren’t listed, message the team to confirm.</p>
+        <CTA href={site.facebook} variant="outline">Ask DOERs on Facebook</CTA>
+        <p><a class="text-link" href={site.collaborationForm}>DOERs inquiry form (Google Forms) ↗</a></p>
+        {site.membershipForm && <a class="text-link" href={site.membershipForm}>Interested in membership? Open the Google Form ↗</a>}
+      </div>
+      <Photo src="get-involved/volunteer.jpg" alt="Volunteers participating in a DOERs activity" />
+    </div>
+  </Section>
+</BaseLayout>

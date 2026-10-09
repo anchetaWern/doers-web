@@ -1,0 +1,20 @@
+---
+// Phase 1: preserve areas of work without republishing unverified historic totals.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import Photo from '../components/Photo.astro';
+import Statistic from '../components/Statistic.astro';
+import { impact } from '../data/impact';
+import { programs } from '../data/programs';
+---
+<BaseLayout title="Our impact" description="Explore DOERs work in coastal cleanups, tree planting, sea turtle protection and community care.">
+  <PageHeading title="Care that reaches beyond the coast." eyebrow="Our impact" description="From cleaner beaches to community health, our work starts with people giving their time." />
+  <Section id="programs" title="Where our volunteers help">
+    <div class="grid grid--3">{programs.map(program => <Card title={program.title}><Photo slot="image" src={program.image} alt={program.title} sizes="(min-width: 48rem) 33vw, 100vw" /><p>{program.description}</p></Card>)}</div>
+  </Section>
+  <Section tone="soft" id="impact-record" title="Our impact record">
+    {impact.metrics.length ? <><dl class="grid grid--3">{impact.metrics.map(metric => <Statistic value={metric.value} label={metric.label} context={`${metric.period} · ${metric.source}`} />)}</dl>{impact.lastUpdated && <p>Updated <time datetime={impact.lastUpdated}>{impact.lastUpdated}</time></p>}</> : <p class="prose">We’re reviewing our historical figures before publishing an updated impact summary. Explore our <a href="/about#recognition">documented recognitions</a> to learn more about our work.</p>}
+  </Section>
+</BaseLayout>
